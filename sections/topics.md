@@ -27,6 +27,7 @@ Get all topics
         "updated_at":"2016-10-17T05:58:34+00:00",
         "created_at":"2016-10-17T05:58:34+00:00",
         "reply_email":"c+284134590-851876733-25299755465@mail.proofhub.com",
+        "updated_by": 12009183,
         "assigned":[
             12009183,
             11679192
@@ -50,6 +51,7 @@ Get all topics
         "updated_at":"2016-10-17T10:41:11+00:00",
         "created_at":"2016-10-17T10:40:57+00:00",
         "reply_email":"c+284134590-851876733-25299972565@mail.proofhub.com",
+        "updated_by": 12009183,
         "assigned":[
             1176508223
         ],
@@ -124,6 +126,7 @@ Get topic
     "updated_at":"2016-10-17T10:41:11+00:00",
     "created_at":"2016-10-17T10:40:57+00:00",
     "reply_email":"c+284134590-851876733-25299972565@mail.proofhub.com",
+    "updated_by": 12009183,
     "assigned":[
         1176508223
     ],
