@@ -38,13 +38,12 @@ API endpoints
 * [Tasks](https://github.com/ProofHub/api_v3/blob/master/sections/tasks.md)
 * [Files](https://github.com/ProofHub/api_v3/blob/master/sections/files.md)
 * [Attachments](https://github.com/ProofHub/api_v3/blob/master/sections/attachments.md)
-* [Events and milestones](https://github.com/ProofHub/api_v3/blob/master/sections/events and milestones.md)
+* [Events and milestones](https://github.com/ProofHub/api_v3/blob/master/sections/events%20and%20milestones.md)
 * [Notebooks](https://github.com/ProofHub/api_v3/blob/master/sections/notebooks.md)
 * [Notes](https://github.com/ProofHub/api_v3/blob/master/sections/notes.md)
 * [Folders](https://github.com/ProofHub/api_v3/blob/master/sections/folders.md)
 * [Timesheets](https://github.com/ProofHub/api_v3/blob/master/sections/timesheets.md)
 * [Time](https://github.com/ProofHub/api_v3/blob/master/sections/time.md)
-* [Timer](https://github.com/ProofHub/api_v3/blob/master/sections/timer.md)
 * [Quickies](https://github.com/ProofHub/api_v3/blob/master/sections/quickies.md)
 
 
