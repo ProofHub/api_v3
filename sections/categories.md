@@ -51,10 +51,10 @@ Create Category
 }
 ```
 
-`201 Created` will be returned along with the JSON of the category ([Get category](#get-category)) if the record is added. 
+`201 Created` will be returned along with the JSON of the category ([Get Category](#get-category)) if the record is added. 
 
 
-Update category
+Update Category
 ----------------
 
 * `PUT v3/categories/65707070` will update the category.
@@ -65,9 +65,9 @@ Update category
 }
 ```
 
-`200 OK` will be returned along with the JSON of the category ([Get category](#get-category)) if the record is updated. `403 Forbidden` will be returned in case of invalid access.
+`200 OK` will be returned along with the JSON of the category ([Get Category](#get-category)) if the record is updated. `403 Forbidden` will be returned in case of invalid access.
 
-Delete category
+Delete Category
 ----------------
 
 * `DELETE v3/categories/65707070` will delete the category specified.
