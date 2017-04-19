@@ -1,7 +1,7 @@
 Roles
 ====================
 
-* [Get roles](#get-groups)
+* [Get roles](#get-roles)
 
 
 Get roles

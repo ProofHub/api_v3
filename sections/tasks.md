@@ -11,8 +11,8 @@ Tasks
 * [Create comment](#create-comment)
 * [Update comment](#update-comment)
 * [Delete comment](#delete-comment)
-* [Get all history](#get-all task history)
-* [Get history](#get-particular activity)
+* [Get task history](#get-task-history)
+* [Get task history detail](#get-task-history-details)
 * [Get all labels](#get-all-labels)
 * [Get label](#get-label)
 * [Create label](#create-label)
@@ -386,7 +386,7 @@ Get task history
 ```
 
 
-Get particular activity
+Get task history detail
 ----------------
 
 * `GET v3/projects/23423233/todolists/13964085/tasks/13966758/history/31383136` will return the specified activity happened in task specified.

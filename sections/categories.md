@@ -1,11 +1,11 @@
 Categories
 ====================
 
-* [Get Categories](#get-Categories)
-* [Get Category](#get-Category)
-* [Create Category](#create-Category)
-* [Update Category](#update-Category)
-* [Delete Category](#delete-Category)
+* [Get Categories](#get-categories)
+* [Get Category](#get-category)
+* [Create Category](#create-category)
+* [Update Category](#update-category)
+* [Delete Category](#delete-category)
 
 Get Categories
 ----------------

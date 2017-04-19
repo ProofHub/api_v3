@@ -1,11 +1,11 @@
 Quickies
 ====================
-* [Get quickies](#get-Quickies)
-* [Get quickie](#get-Quickie)
-* [Create quickie](#create-Quickie)
-* [Update quickie](#update-Quickie)
-* [Delete quickie](#delete-Quickie)
-* [Complete quickie](#complete-Quickie)
+* [Get quickies](#get-quickies)
+* [Get quickie](#get-quickie)
+* [Create quickie](#create-quickie)
+* [Update quickie](#update-quickie)
+* [Delete quickie](#delete-quickie)
+* [Complete quickie](#complete-quickie)
 
 Get all quickies
 ----------------
