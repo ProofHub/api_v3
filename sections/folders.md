@@ -13,33 +13,33 @@ Get folders
 
 ```json
 [
-	{
-      "id": 67811577,
-      "level": 1,
-      "name": "Phase 1 documents",
-      "reply_email": "f+107184987-855716680-678115778@mail.proofhub.com",
-      "created_at": "2016-12-06T07:06:45+00:00",
-      "updated_at": "2016-12-06T07:15:37+00:00",
-      "parent_id": "root",
-      "type": "folder",
-      "project": {
-        "id": 23423233
-      }
-      },
-	{
-      "id": 67811578,
-      "level": 1,
-      "name": "Analysis Documents",
-      "reply_email": "f+107184987-855716680-678115778@mail.proofhub.com",
-      "created_at": "2016-12-06T07:06:45+00:00",
-      "updated_at": "2016-12-06T07:15:37+00:00",
-      "parent_id": "root",
-      "type": "folder",
-      "project": {
-        "id": 23423233
-      }
-      },
- ]
+    {
+        "id":67811577,
+        "level":1,
+        "name":"Phase 1 documents",
+        "reply_email":"f+107184987-855716680-678115778@mail.proofhub.com",
+        "created_at":"2016-12-06T07:06:45+00:00",
+        "updated_at":"2016-12-06T07:15:37+00:00",
+        "parent_id":"root",
+        "type":"folder",
+        "project":{
+            "id":23423233
+        }
+    },
+    {
+        "id":67811578,
+        "level":1,
+        "name":"Analysis Documents",
+        "reply_email":"f+107184987-855716680-678115778@mail.proofhub.com",
+        "created_at":"2016-12-06T07:06:45+00:00",
+        "updated_at":"2016-12-06T07:15:37+00:00",
+        "parent_id":"root",
+        "type":"folder",
+        "project":{
+            "id":23423233
+        }
+    }
+]
 ```
 
 Create folder
@@ -49,7 +49,7 @@ Create folder
 
 ```json
 {
-	"name": "Phase II Document"
+    "name": "Phase II Document"
 }
 ```
 

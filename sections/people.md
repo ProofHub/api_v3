@@ -14,63 +14,62 @@ Get people
 
 ```json
 [
-	{
-       "id": 12009183,
-       "first_name": "Chris",
-       "last_name": "Wagley",
-       "title": "Manager",
-       "email": "chris@email.com",
-       "role": {
-      "id": 903912753
+    {
+        "id":12009183,
+        "first_name":"Chris",
+        "last_name":"Wagley",
+        "title":"Manager",
+        "email":"chris@email.com",
+        "role":{
+            "id":903912753
+        },
+        "groups":[
+            33838231,
+            33838232
+        ],
+        "timezone":8,
+        "initials":"N",
+        "image_url":null,
+        "profile_color":"#781f1f",
+        "language":"en",
+        "suspended":false,
+        "send_invite":true,
+        "last_active":"2016-09-19T06:17:22+00:00",
+        "created_at":"2016-09-16T10:39:25+00:00",
+        "updated_at":"2016-09-16T10:39:25+00:00",
+        "projects":[
+            23423233,
+            23423234
+        ]
     },
-       "groups": [
-         33838231,
-         33838232
-       ],
-       "timezone": 8,
-       "initials": "N",
-       "image_url": null,
-       "profile_color": "#781f1f",
-       "language": "en",
-       "suspended": false,
-       "send_invite": true,
-       "last_active": "2016-09-19T06:17:22+00:00",
-       "created_at": "2016-09-16T10:39:25+00:00",
-       "updated_at": "2016-09-16T10:39:25+00:00",
-       "projects": [
-         23423233,
-         23423234
-       ]
-     },
-
-	{
-       "id": 11679192,
-       "first_name": "Stella",
-       "last_name": "Altois",
-       "title": "Manager",
-       "email": "stella@email.com",
-       "role": {
-      "id": 90391275
-    },
-       "groups": [
-         33838231,
-         33838232
-       ],
-       "timezone": 10,
-       "initials": "C",
-       "image_url": null,
-       "profile_color": "#781f1f",
-       "language": "en",
-       "suspended": false,
-       "send_invite": true,
-       "last_active": "2016-09-19T06:17:22+00:00",
-       "created_at": "2016-09-16T10:39:25+00:00",
-       "updated_at": "2016-09-16T10:39:25+00:00",
-       "projects": [
-       23423233,
-       23423234
-       ]
-     }
+    {
+        "id":11679192,
+        "first_name":"Stella",
+        "last_name":"Altois",
+        "title":"Manager",
+        "email":"stella@email.com",
+        "role":{
+            "id":90391275
+        },
+        "groups":[
+            33838231,
+            33838232
+        ],
+        "timezone":10,
+        "initials":"C",
+        "image_url":null,
+        "profile_color":"#781f1f",
+        "language":"en",
+        "suspended":false,
+        "send_invite":true,
+        "last_active":"2016-09-19T06:17:22+00:00",
+        "created_at":"2016-09-16T10:39:25+00:00",
+        "updated_at":"2016-09-16T10:39:25+00:00",
+        "projects":[
+            23423233,
+            23423234
+        ]
+    }
 ]
 ```
 
@@ -81,33 +80,33 @@ Get person
 
 ```json
 {
-       "id": 11679192,
-       "first_name": "Stella",
-       "last_name": "Altois",
-       "title": "Manager",
-       "email": "stella@email.com",
-       "role": {
-      "id": 90391275
+    "id":11679192,
+    "first_name":"Stella",
+    "last_name":"Altois",
+    "title":"Manager",
+    "email":"stella@email.com",
+    "role":{
+        "id":90391275
     },
-       "groups": [
-         33838231,
-         33720182
-       ],
-       "timezone": 10,
-       "initials": "C",
-       "image_url": null,
-       "profile_color": "#781f1f",
-       "language": "en",
-       "suspended": false,
-       "send_invite": true,
-       "last_active": "2016-09-19T06:17:22+00:00",
-       "created_at": "2016-09-16T10:39:25+00:00",
-       "updated_at": "2016-09-16T10:39:25+00:00",
-       "projects": [
-       23423233,
-       23423234
-       ]
-     }
+    "groups":[
+        33838231,
+        33720182
+    ],
+    "timezone":10,
+    "initials":"C",
+    "image_url":null,
+    "profile_color":"#781f1f",
+    "language":"en",
+    "suspended":false,
+    "send_invite":true,
+    "last_active":"2016-09-19T06:17:22+00:00",
+    "created_at":"2016-09-16T10:39:25+00:00",
+    "updated_at":"2016-09-16T10:39:25+00:00",
+    "projects":[
+        23423233,
+        23423234
+    ]
+}
 ```
 
 Create person
@@ -125,9 +124,9 @@ Create person
 }
 ```
 
-Language includes `en`, `fr`. You can get the group from the [groups API](https://github.com/sdplabs/proofhub-api/blob/master/sections/groups.md).
+Language includes `en`, `fr`. You can get the group from the [groups API](https://github.com/ProofHub/api_v3/blob/master/sections/groups.md).
 
-`201 Created` will be returned along with the JSON of the person ([Get person](#get-person)) if the record is added. New people can also be invited directly to the [projects](https://github.com/sdplabs/proofhub-api/blob/master/sections/projects.md#assign-people-to-project).
+`201 Created` will be returned along with the JSON of the person ([Get person](#get-person)) if the record is added. New people can also be invited directly to the [projects](https://github.com/ProofHub/api_v3/blob/master/sections/projects.md#assign-people-to-project).
 
 Update person
 ----------------

@@ -21,51 +21,51 @@ Get notes
 
 ```json
 [
-	{
-      "id": 80731707,
-      "title": "Requirements for launch party",
-      "content": null,
-      "color": "4A4A4A",
-      "private": false,
-      "assigned": [
-        12009183
-      ],
-      "updated_by": 12009183,
-      "created_at": "2016-12-27T12:10:37+00:00",
-      "updated_at": "2016-12-27T12:11:08+00:00",
-      "comments": 0,
-      "project": {
-        "id": 23423233
-      },
-      "creator": {
-        "id": 12009183
-      },
-      "notebook": {
-        "id": 41246749
-      }
+    {
+        "id":80731707,
+        "title":"Requirements for launch party",
+        "content":null,
+        "color":"4A4A4A",
+        "private":false,
+        "assigned":[
+            12009183
+        ],
+        "updated_by":12009183,
+        "created_at":"2016-12-27T12:10:37+00:00",
+        "updated_at":"2016-12-27T12:11:08+00:00",
+        "comments":0,
+        "project":{
+            "id":23423233
+        },
+        "creator":{
+            "id":12009183
+        },
+        "notebook":{
+            "id":41246749
+        }
     },
-	{
-      "id": 80731708,
-      "title": "Launch of the New Website",
-      "content": "A post on our Blog ...",
-      "color": "4A4A4A",
-      "private": false,
-      "assigned": [
-        12009183
-      ],
-      "updated_by": 12009183,
-      "created_at": "2016-12-27T12:10:37+00:00",
-      "updated_at": "2016-12-27T12:11:08+00:00",
-      "comments": 0,
-      "project": {
-        "id": 23423233
-      },
-      "creator": {
-        "id": 12009183
-      },
-      "notebook": {
-        "id": 41246749
-      }
+    {
+        "id":80731708,
+        "title":"Launch of the New Website",
+        "content":"A post on our Blog ...",
+        "color":"4A4A4A",
+        "private":false,
+        "assigned":[
+            12009183
+        ],
+        "updated_by":12009183,
+        "created_at":"2016-12-27T12:10:37+00:00",
+        "updated_at":"2016-12-27T12:11:08+00:00",
+        "comments":0,
+        "project":{
+            "id":23423233
+        },
+        "creator":{
+            "id":12009183
+        },
+        "notebook":{
+            "id":41246749
+        }
     }
 ]
 ```
@@ -77,34 +77,34 @@ Get note
 
 ```json
 {
-      "id": 80731708,
-      "title": "Launch of the New Website",
-      "content": "A post on our Blog ...",
-      "color": "4A4A4A",
-      "private": false,
-      "assigned": [
+    "id":80731708,
+    "title":"Launch of the New Website",
+    "content":"A post on our Blog ...",
+    "color":"4A4A4A",
+    "private":false,
+    "assigned":[
         12009183
-      ],
-      "updated_by": 12009183,
-      "created_at": "2016-12-27T12:10:37+00:00",
-      "updated_at": "2016-12-27T12:11:08+00:00",
-      "comments": 0,
-      "project": {
-        "id": 23423233
-      },
-      "creator": {
-        "id": 12009183
-      },
-      "notebook": {
-        "id": 41246749
-      }
+    ],
+    "updated_by":12009183,
+    "created_at":"2016-12-27T12:10:37+00:00",
+    "updated_at":"2016-12-27T12:11:08+00:00",
+    "comments":0,
+    "project":{
+        "id":23423233
+    },
+    "creator":{
+        "id":12009183
+    },
+    "notebook":{
+        "id":41246749
     }
+}
 ```
 Create note
 ----------------
 
 * `POST v3/projects/23423233/notebooks/41246749/notes` will create a new note from the parameters passed. 
-* The assigend array is an optional list of people IDs that you can get from the [people API](https://github.com/sdplabs/proofhub-api/blob/master/sections/people.md). 
+* The assigend array is an optional list of people IDs that you can get from the [people API](https://github.com/ProofHub/api_v3/blob/master/sections/people.md). 
 
 ```json
 {
@@ -148,40 +148,40 @@ Get all note comments
 
 ```json
 [
-  {
-    "id": 36215469,
-    "description": "Design of website completed",
-    "status": "open",
-    "updated_at": "2016-12-27T13:30:53+00:00",
-    "created_at": "2016-12-27T13:30:53+00:00",
-    "by_me": true,
-    "project": {
-      "id": 23423233
+    {
+        "id": 36215469,
+        "description": "Design of website completed",
+        "status": "open",
+        "updated_at": "2016-12-27T13:30:53+00:00",
+        "created_at": "2016-12-27T13:30:53+00:00",
+        "by_me": true,
+        "project": {
+            "id": 23423233
+        },
+        "creator": {
+            "id": 12009183
+        },
+        "note": {
+            "id": 80731708
+        }
     },
-    "creator": {
-      "id": 12009183
-    },
-    "note": {
-      "id": 80731708
+    {
+        "id": 36215467,
+        "description": "Content updated",
+        "status": "open",
+        "updated_at": "2016-12-28T04:55:47+00:00",
+        "created_at": "2016-12-28T04:55:47+00:00",
+        "by_me": false,
+        "project": {
+            "id": 23423233
+        },
+        "creator": {
+            "id": 12009183
+        },
+        "note": {
+            "id": 80731708
+        }
     }
-  },
-  {
-    "id": 36215467,
-    "description": "Content updated",
-    "status": "open",
-    "updated_at": "2016-12-28T04:55:47+00:00",
-    "created_at": "2016-12-28T04:55:47+00:00",
-    "by_me": false,
-    "project": {
-      "id": 23423233
-    },
-    "creator": {
-      "id": 12009183
-    },
-    "note": {
-      "id": 80731708
-    }
-  }
 ]
 
 ```
@@ -201,15 +201,15 @@ Get comment
     "created_at": "2016-12-27T13:30:53+00:00",
     "by_me": true,
     "project": {
-      "id": 23423233
+        "id": 23423233
     },
     "creator": {
-      "id": 12009183
+        "id": 12009183
     },
     "note": {
-      "id": 80731708
+        "id": 80731708
     }
-  }
+}
 ```
 
 Create comment

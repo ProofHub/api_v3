@@ -27,85 +27,88 @@ Get all tasks
 ```json
 [
     {
-      "id": 13966758,
-      "title": "Update the template document for the training material.",
-      "description": null,
-      "start_date": "2016-11-10",
-      "due_date": "2016-11-10",
-      "estimated_hours": 10,
-      "estimated_mins": null,
-      "logged_hours": null,
-      "logged_mins": null,
-      "updated_at": "2016-11-10T11:41:44+00:00",
-      "created_at": "2016-11-10T11:41:44+00:00",
-      "completed": false,
-      "assigned": [
-      12009183,
-      11679192
-      ],
-      "labels": [
-      12254912
-      ],
-      "sub_tasks": 0,
-      "task_history": null,
-      "percent_progress": 0,
-      "attachments": [
-      ],
-      "comments": 0,
-      "by_me": true,
-      "template": false,
-      "project": {
-        "id": 23423233,
-        "name": "ProofHub marketing"
-      },
-      "creator": {
-        "id": 12009183
-      },
-      "list": {
-      "id": 13964085,
-     "name": "Training material on marketing"
-      }
-}
-,
-   {
-      "id": 13966759,
-      "title": "Get the completed document reviewed and approved by each and every person responsible.",
-      "description": "Get the completed document reviewed and approved in detail.",
-      "start_date": null,
-      "due_date": null,
-      "estimated_hours": 20,
-      "estimated_mins": 30,
-      "logged_hours": 20,
-      "logged_mins": 30,
-      "updated_at": "2016-11-10T11:42:58+00:00",
-      "created_at": "2016-11-10T11:42:58+00:00",
-      "completed": true,
-      "assigned": [
-      ],
-      "labels": [
-      ],
-      "sub_tasks": 1,
-      "task_history": "Marked as <i>complete</i>  on 10 Nov, 2016 11:52 PM by  Chris Wagleys<br>",
-      "percent_progress": 100,
-      "completed_at": "2016-11-10T11:52:39+00:00",
-      "completed_by": 12009183,
-      "attachments": [
-      ],
-      "comments": 2,
-      "by_me": true,
-      "template": false,
-      "project": {
-        "id": 23423233,
-        "name": "ProofHub marketing"
-      },
-      "creator": {
-        "id": 12009183
-      },
-      "list": {
-        "id": 13964085,
-        "name": "Training material on marketing"
-      }
-}
+        "id":13966758,
+        "title":"Update the template document for the training material.",
+        "description":null,
+        "start_date":"2016-11-10",
+        "due_date":"2016-11-10",
+        "estimated_hours":10,
+        "estimated_mins":null,
+        "logged_hours":null,
+        "logged_mins":null,
+        "updated_at":"2016-11-10T11:41:44+00:00",
+        "created_at":"2016-11-10T11:41:44+00:00",
+        "completed":false,
+        "assigned":[
+            12009183,
+            11679192
+        ],
+        "labels":[
+            12254912
+        ],
+        "sub_tasks":0,
+        "task_history":null,
+        "percent_progress":0,
+        "attachments":[
+
+        ],
+        "comments":0,
+        "by_me":true,
+        "template":false,
+        "project":{
+            "id":23423233,
+            "name":"ProofHub marketing"
+        },
+        "creator":{
+            "id":12009183
+        },
+        "list":{
+            "id":13964085,
+            "name":"Training material on marketing"
+        }
+    },
+    {
+        "id":13966759,
+        "title":"Get the completed document reviewed and approved by each and every person responsible.",
+        "description":"Get the completed document reviewed and approved in detail.",
+        "start_date":null,
+        "due_date":null,
+        "estimated_hours":20,
+        "estimated_mins":30,
+        "logged_hours":20,
+        "logged_mins":30,
+        "updated_at":"2016-11-10T11:42:58+00:00",
+        "created_at":"2016-11-10T11:42:58+00:00",
+        "completed":true,
+        "assigned":[
+
+        ],
+        "labels":[
+
+        ],
+        "sub_tasks":1,
+        "task_history":"Marked as <i>complete</i>  on 10 Nov, 2016 11:52 PM by  Chris Wagleys<br>",
+        "percent_progress":100,
+        "completed_at":"2016-11-10T11:52:39+00:00",
+        "completed_by":12009183,
+        "attachments":[
+
+        ],
+        "comments":2,
+        "by_me":true,
+        "template":false,
+        "project":{
+            "id":23423233,
+            "name":"ProofHub marketing"
+        },
+        "creator":{
+            "id":12009183
+        },
+        "list":{
+            "id":13964085,
+            "name":"Training material on marketing"
+        }
+    }
 ]
 
 ```
@@ -117,50 +120,53 @@ Get task
 
 ```json
 {
-      "id": 13966758,
-      "title": "Get the completed document reviewed and approved by each and every person responsible.",
-      "description": "Get the completed document reviewed and approved in detail.",
-      "start_date": null,
-      "due_date": null,
-      "estimated_hours": 20,
-      "estimated_mins": 30,
-      "logged_hours": 20,
-      "logged_mins": 30,
-      "updated_at": "2016-11-10T11:42:58+00:00",
-      "created_at": "2016-11-10T11:42:58+00:00",
-      "completed": true,
-      "assigned": [
-      ],
-      "labels": [
-      ],
-      "sub_tasks": 1,
-      "task_history": "Marked as <i>complete</i>  on 10 Nov, 2016 11:52 PM by  Chris<br>",
-      "percent_progress": 100,
-      "completed_at": "2016-11-10T11:52:39+00:00",
-      "completed_by": 12009183,
-      "attachments": [
-      ],
-      "comments": 2,
-      "by_me": true,
-      "template": false,
-      "project": {
-        "id": 23423233,
-        "name": "ProofHub marketing"
-      },
-      "creator": {
-        "id": 12009183
-      },
-      "list": {
-        "id": 13964085,
-        "name": "Training material on marketing"
-      }
+    "id":13966758,
+    "title":"Get the completed document reviewed and approved by each and every person responsible.",
+    "description":"Get the completed document reviewed and approved in detail.",
+    "start_date":null,
+    "due_date":null,
+    "estimated_hours":20,
+    "estimated_mins":30,
+    "logged_hours":20,
+    "logged_mins":30,
+    "updated_at":"2016-11-10T11:42:58+00:00",
+    "created_at":"2016-11-10T11:42:58+00:00",
+    "completed":true,
+    "assigned":[
+
+    ],
+    "labels":[
+
+    ],
+    "sub_tasks":1,
+    "task_history":"Marked as <i>complete</i>  on 10 Nov, 2016 11:52 PM by  Chris<br>",
+    "percent_progress":100,
+    "completed_at":"2016-11-10T11:52:39+00:00",
+    "completed_by":12009183,
+    "attachments":[
+
+    ],
+    "comments":2,
+    "by_me":true,
+    "template":false,
+    "project":{
+        "id":23423233,
+        "name":"ProofHub marketing"
+    },
+    "creator":{
+        "id":12009183
+    },
+    "list":{
+        "id":13964085,
+        "name":"Training material on marketing"
+    }
 }
 ```
 Create task
 ----------------
 
 * `POST v3/projects/23423233/todolists/13964085/tasks` will create a new task from the parameters passed. 
-* The assigned array is an optional list of people IDs that you can get from the [people API](https://github.com/sdplabs/proofhub-api/blob/master/sections/people.md). 
+* The assigned array is an optional list of people IDs that you can get from the [people API](https://github.com/ProofHub/api_v3/blob/master/sections/people.md). 
 
 ```json
 {
@@ -171,10 +177,10 @@ Create task
     "estimated_hours": 5,
     "estimated_mins": 30,
     "assigned": [
-      12009183
+        12009183
     ],
     "labels": [
-      12254912
+        12254912
     ]
 }
 ```
@@ -184,7 +190,7 @@ Create task
 **Attaching files**
 
 Attaching files to a task requires both the token and the name of the attachment. The token is obtained from the [Create attachments](
-https://github.com/sdplabs/proofhub-api/blob/master/sections/attachemnts.md#create-attachment) endpoint, which you must hit first before creating an upload. The name parameter must be a valid filename with an extension. Multiple attachments are allowed. Set folder to `0` if you don't want to upload file in any folder.
+https://github.com/ProofHub/api_v3/blob/master/sections/attachemnts.md#create-attachment) endpoint, which you must hit first before creating an upload. The name parameter must be a valid filename with an extension. Multiple attachments are allowed. Set folder to `0` if you don't want to upload file in any folder.
 
 ```json
 {
@@ -246,44 +252,44 @@ Get all task comments
 
 ```json
 [
-  {
-    "id": 30438075,
-    "description": "Meeting with the client",
-    "created_at": "2016-11-11T08:11:10+00:00",
-    "by_me": true,
-    "comments_count": 2,
-    "list": {
-      "id": 13964085
+    {
+        "id":30438075,
+        "description":"Meeting with the client",
+        "created_at":"2016-11-11T08:11:10+00:00",
+        "by_me":true,
+        "comments_count":2,
+        "list":{
+            "id":13964085
+        },
+        "project":{
+            "id":23423233
+        },
+        "creator":{
+            "id":12009183
+        },
+        "task":{
+            "id":13966758
+        }
     },
-    "project": {
-      "id": 23423233
-    },
-    "creator": {
-      "id": 12009183
-    },
-    "task": {
-      "id": 13966758
+    {
+        "id":30438076,
+        "description":"Meeting postponed",
+        "created_at":"2016-11-11T08:15:40+00:00",
+        "by_me":true,
+        "comments_count":2,
+        "list":{
+            "id":13964085
+        },
+        "project":{
+            "id":23423233
+        },
+        "creator":{
+            "id":12009183
+        },
+        "task":{
+            "id":13966758
+        }
     }
-  },
-  {
-    "id": 30438076,
-    "description": "Meeting postponed",
-    "created_at": "2016-11-11T08:15:40+00:00",
-    "by_me": true,
-    "comments_count": 2,
-    "list": {
-      "id": 13964085
-    },
-    "project": {
-      "id": 23423233
-    },
-    "creator": {
-      "id": 12009183
-    },
-    "task": {
-      "id": 13966758
-    }
-  }
 ]
 
 ```
@@ -296,24 +302,24 @@ Get comment
 
 ```json
 {
-    "id": 30438075,
-    "description": "Meeting with the client",
-    "created_at": "2016-11-11T08:11:10+00:00",
-    "by_me": true,
-    "comments_count": 2,
-    "list": {
-      "id": 13964085
+    "id":30438075,
+    "description":"Meeting with the client",
+    "created_at":"2016-11-11T08:11:10+00:00",
+    "by_me":true,
+    "comments_count":2,
+    "list":{
+        "id":13964085
     },
-    "project": {
-      "id": 23423233
+    "project":{
+        "id":23423233
     },
-    "creator": {
-      "id": 12009183
+    "creator":{
+        "id":12009183
     },
-    "task": {
-      "id": 13966758
+    "task":{
+        "id":13966758
     }
-  }
+}
 ```
 
 Create comment
@@ -355,28 +361,28 @@ Get task history
 
 ```json
 [
-{
-    "id": 31383136,
-    "user_id": 13592923,
-    "activity": "2017-03-22T10:02:51+00:00",
-    "date": "2017-03-22",
-    "action": "Updated"
-  },
-  {
-    "id": 31382865,
-    "user_id": 13592923,
-    "activity": "2017-03-22T10:02:46+00:00",
-    "date": "2017-03-22",
-    "action": "Updated"
-  },
-  {
-    "id": 31382724,
-    "user_id": 13592923,
-    "activity": "2017-03-22T10:02:38+00:00",
-    "date": "2017-03-22",
-    "action": "Updated"
-  }
-  ]
+    {
+        "id":31383136,
+        "user_id":13592923,
+        "activity":"2017-03-22T10:02:51+00:00",
+        "date":"2017-03-22",
+        "action":"Updated"
+    },
+    {
+        "id":31382865,
+        "user_id":13592923,
+        "activity":"2017-03-22T10:02:46+00:00",
+        "date":"2017-03-22",
+        "action":"Updated"
+    },
+    {
+        "id":31382724,
+        "user_id":13592923,
+        "activity":"2017-03-22T10:02:38+00:00",
+        "date":"2017-03-22",
+        "action":"Updated"
+    }
+]
 ```
 
 
@@ -387,7 +393,7 @@ Get particular activity
 
 ```json
 {
-  "content": "<b>Previous:</b> <br>Time estimate: '0' hours '0' mins <br><br><b>New:</b> <br>Time estimate: '100' hours '0' mins <br><br>"
+    "content": "<b>Previous:</b> <br>Time estimate: '0' hours '0' mins <br><br><b>New:</b> <br>Time estimate: '100' hours '0' mins <br><br>"
 }
 ```
 
@@ -398,32 +404,32 @@ Get all labels
 
 ```json
 [
-  {
-    "id": 12254912,
-    "name": "Medium",
-    "color": "#FBB008"
-  },
-  {
-    "id": 12254913,
-    "name": "Low",
-    "color": "#999999"
-  },
-  {
-    "id": 12254914,
-    "name": "Urgent",
-    "color": "#FF6600"
-  },
-  {
-    "id": 12254915,
-    "name": "Pending",
-    "color": "#E07798"
-  },
-  {
-    "id": 12254916,
-    "name": "high",
-    "color": "#BF0000"
-  }
-  ]
+    {
+        "id":12254912,
+        "name":"Medium",
+        "color":"#FBB008"
+    },
+    {
+        "id":12254913,
+        "name":"Low",
+        "color":"#999999"
+    },
+    {
+        "id":12254914,
+        "name":"Urgent",
+        "color":"#FF6600"
+    },
+    {
+        "id":12254915,
+        "name":"Pending",
+        "color":"#E07798"
+    },
+    {
+        "id":12254916,
+        "name":"high",
+        "color":"#BF0000"
+    }
+]
 ```
 
 
@@ -433,11 +439,11 @@ Get label
 * `GET v3/labels/12254912` will return the specified label.
 
 ```json
- {
+{
     "id": 12254912,
     "name": "high",
     "color": "#BF0000"
-  }
+}
 ```
 
 Create label

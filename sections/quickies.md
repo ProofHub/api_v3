@@ -14,30 +14,30 @@ Get all quickies
 
 ```json
 [
-{
-    "id": 84050329,
-    "due_date": "2016-11-25",
-    "type": "quickie",
-    "title": "Make notes regarding meeting",
-    "completed": false,
-    "created_at": "2016-10-26T07:46:12+00:00",
-    "completed_at": "2016-11-03T08:14:48+00:00",
-    "creator": {
-      "id": 12009183
+    {
+        "id":84050329,
+        "due_date":"2016-11-25",
+        "type":"quickie",
+        "title":"Make notes regarding meeting",
+        "completed":false,
+        "created_at":"2016-10-26T07:46:12+00:00",
+        "completed_at":"2016-11-03T08:14:48+00:00",
+        "creator":{
+            "id":12009183
+        }
+    },
+    {
+        "id":84050327,
+        "due_date":null,
+        "type":"shortcut",
+        "title":"First topic",
+        "completed":false,
+        "created_at":"2016-11-24T09:41:35+00:00",
+        "completed_at":null,
+        "creator":{
+            "id":12009183
+        }
     }
-  },
-	{
-    "id": 84050327,
-    "due_date": null,
-    "type": "shortcut",
-    "title": "First topic",
-    "completed": false,
-    "created_at": "2016-11-24T09:41:35+00:00",
-    "completed_at": null,
-    "creator": {
-      "id": 12009183
-    }
-  }
 ]
 ```
 
@@ -56,9 +56,9 @@ Get quickie
     "created_at": "2016-10-26T07:46:12+00:00",
     "completed_at": "2016-11-03T08:14:48+00:00",
     "creator": {
-      "id": 12009183
+        "id": 12009183
     }
-  }
+}
 ```
 
 Create quickie
@@ -69,8 +69,7 @@ Create quickie
 ```json
 {
 	"title":"Prepare notes for meeting"
- 
-	}
+}
 ```
 
 `201 Created` will be returned along with the JSON of the quickie ([Get quickies](#get-quickies)) if the record is added. 

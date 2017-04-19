@@ -32,7 +32,6 @@ API endpoints
 * [Groups](https://github.com/ProofHub/api_v3/blob/master/sections/groups.md)
 * [People](https://github.com/ProofHub/api_v3/blob/master/sections/people.md)
 * [Roles](https://github.com/ProofHub/api_v3/blob/master/sections/roles.md)
-* [Preferences](https://github.com/ProofHub/api_v3/blob/master/sections/preferences.md)
 * [Topics](https://github.com/ProofHub/api_v3/blob/master/sections/topics.md)
 * [Topic Comments](https://github.com/ProofHub/api_v3/blob/master/sections/comments.md)
 * [Todolists](https://github.com/ProofHub/api_v3/blob/master/sections/tododlists.md)

@@ -5,10 +5,10 @@ Uploading files to ProofHub is a two step process:
 
 * Create the attachment, receive a token verifying the upload was successful.
 * Attach the file to a topic, comment, task or file section. See the following endpoints for attaching:
-	* [Create topic](https://github.com/sdplabs/proofhub-api/blob/master/sections/topics.md#create-topic)
-	* [Create comment](https://github.com/sdplabs/proofhub-api/blob/master/sections/comments.md#create-comment)
-	* [Create task](https://github.com/sdplabs/proofhub-api/blob/master/sections/tasks.md#create-task)
-	* [Create file](https://github.com/sdplabs/proofhub-api/blob/master/sections/files.md#create-file)
+	* [Create topic](https://github.com/ProofHub/api_v3/blob/master/sections/topics.md#create-topic)
+	* [Create comment](https://github.com/ProofHub/api_v3/blob/master/sections/comments.md#create-comment)
+	* [Create task](https://github.com/ProofHub/api_v3/blob/master/sections/tasks.md#create-task)
+	* [Create file](https://github.com/ProofHub/api_v3/blob/master/sections/files.md#create-file)
 
 
 Create attachments
@@ -24,6 +24,6 @@ Once the upload is successful, you'll get a 200 OK response, and we'll give you 
 
 ```json
 {
-  "token": "UVBEbHZkc2puN3h3VHB2cDlZQ3JWdz09"
+	"token": "UVBEbHZkc2puN3h3VHB2cDlZQ3JWdz09"
 }
 ```

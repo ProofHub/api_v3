@@ -15,58 +15,58 @@ Get timesheets
 ```json
 [
     {
-    "id": 23570135,
-    "title": "Prepare training material",
-    "estimated_hours": 100,
-    "estimated_mins": null,
-    "logged_hours": 10,
-    "logged_mins": 30,
-    "billable_hours": null,
-    "billable_mins": null,
-    "billed_hours": null,
-    "billed_mins": null,
-     "creator": {
-      "id": 65707070
+        "id":23570135,
+        "title":"Prepare training material",
+        "estimated_hours":100,
+        "estimated_mins":null,
+        "logged_hours":10,
+        "logged_mins":30,
+        "billable_hours":null,
+        "billable_mins":null,
+        "billed_hours":null,
+        "billed_mins":null,
+        "creator":{
+            "id":65707070
+        },
+        "project":{
+            "id":23423233
+        },
+        "assigned":[
+            12009183,
+            11679192
+        ],
+        "private":true,
+        "archived":false,
+        "created_at":"2016-09-30T05:12:09+00:00",
+        "updated_at":"2016-09-30T05:26:41+00:00",
+        "by_me":true
     },
-    "project": {
-      "id": 23423233
-    },
-    "assigned": [
-      12009183,
-      11679192
-    ],
-    "private": true,
-    "archived": false,
-    "created_at": "2016-09-30T05:12:09+00:00",
-    "updated_at": "2016-09-30T05:26:41+00:00",
-     "by_me": true
-    },
-    
     {
-    "title":"Sample timesheet",
-    "estimated_hours": 100,
-    "estimated_mins": null,
-    "logged_hours": 10,
-    "logged_mins": 30,
-    "billable_hours": 5,
-    "billable_mins": 5,
-    "billed_hours": null,
-    "billed_mins": null,
-    "creator":{
-      "id": 12009183
-      },
-    "project": {
-      "id": 23423233
-    },
-    "assigned":[
-    ],
-    "private": false,
-    "archived": false,
-    "created_at": "2016-09-30T05:11:36+00:00",
-    "updated_at": "2016-09-30T05:41:11+00:00",
-    "by_me": true
+        "title":"Sample timesheet",
+        "estimated_hours":100,
+        "estimated_mins":null,
+        "logged_hours":10,
+        "logged_mins":30,
+        "billable_hours":5,
+        "billable_mins":5,
+        "billed_hours":null,
+        "billed_mins":null,
+        "creator":{
+            "id":12009183
+        },
+        "project":{
+            "id":23423233
+        },
+        "assigned":[
+
+        ],
+        "private":false,
+        "archived":false,
+        "created_at":"2016-09-30T05:11:36+00:00",
+        "updated_at":"2016-09-30T05:41:11+00:00",
+        "by_me":true
     }
-  ]
+]
 ```
 
 Get timesheet
@@ -76,34 +76,34 @@ Get timesheet
 
 ```json
 [
- {
-    "id": 23570135,
-    "title": "Prepare training material",
-    "estimated_hours": 100,
-    "estimated_mins": null,
-    "logged_hours": 10,
-    "logged_mins": 30,
-    "billable_hours": null,
-    "billable_mins": null,
-    "billed_hours": null,
-    "billed_mins": null,
-     "creator": {
-      "id": 12009183
-    },
-    "project": {
-      "id": 23423233
-    },
-    "assigned": [
-      12009183,
-      11679192
-    ],
-    "private": true,
-    "archived": false,
-    "created_at": "2016-09-30T05:12:09+00:00",
-    "updated_at": "2016-09-30T05:26:41+00:00",
-     "by_me": true
+    {
+        "id":23570135,
+        "title":"Prepare training material",
+        "estimated_hours":100,
+        "estimated_mins":null,
+        "logged_hours":10,
+        "logged_mins":30,
+        "billable_hours":null,
+        "billable_mins":null,
+        "billed_hours":null,
+        "billed_mins":null,
+        "creator":{
+            "id":12009183
+        },
+        "project":{
+            "id":23423233
+        },
+        "assigned":[
+            12009183,
+            11679192
+        ],
+        "private":true,
+        "archived":false,
+        "created_at":"2016-09-30T05:12:09+00:00",
+        "updated_at":"2016-09-30T05:26:41+00:00",
+        "by_me":true
     }
-]    
+]  
 ```
 Create timesheet
 ----------------
@@ -117,9 +117,9 @@ Create timesheet
     "estimated_mins":"30",
     "private":true,
     "assigned":[
-    12009183,
-    11679192
-  ]
+        12009183,
+        11679192
+    ]
 }
 ```
 

@@ -12,38 +12,33 @@ Get files
 
 ```json
 [
-	{
-		"id":1254836,
-		"name":"sample.png",
-		"byte_size":11830,
-		"created_at":"2013-12-31T07:29:58+00:00",
-		"source":"upload",
-		"url":"https://assets.proofhub.com/thumb/user/index.php/thumb_sample.png?width=1000&height=800&image=2176707/47659038/812b4ba287f5ee0bc9d43bbf5bbe87fb1388474998pd/3ffc91b37825807f0b232f25c2434d64/sample.png",
-		"creator":{
-	        "id":5895623,
-	        "name":"Stella Altois",
-	        "image_url":"https://assets.proofhub.com/thumb/user/index.php?width=80&height=80&cropratio=1:1&image=123456/812b4ba287f5ee0bc9d43bbf5bbe87fb1370073119.jpg"
-	    },
-		"attachable":null
-	},
-	{
-		"id":4512451,
-		"name":"logo.png",
-		"byte_size":"13598",
-		"created_at":"2013-12-31T09:26:46+00:00",
-		"source":"upload",
-		"url":"https://assets.proofhub.com/thumb/user/index.php/thumb_zoom.png?width=1000&height=800&image=2176707/47659038/812b4ba287f5ee0bc9d43bbf5bbe87fb1388482006a1/9e2e7017902acb7999b66589efca3639/logo.png",
-		"creator":{
-			"id":4634893,
-	        "name":"Chris Wagleys",
-	        "image_url":null
-		},
-		"attachable":{
-			"id":852369,
-			"type":"Comment",
-			"url":"https://api.proofhub.com/v1/projects/23423233/topics/123456/comments/852369.json"
-		}
-	}
+    {
+        "id":1254836,
+        "name":"sample.png",
+        "byte_size":11830,
+        "created_at":"2013-12-31T07:29:58+00:00",
+        "source":"upload",
+        "url":"https://companyurl.proofhub.com/files/thumb/user/image.png",
+        "creator":{
+            "id":5895623,
+            "name":"Stella Altois",
+            "image_url":"https://companyurl.proofhub.com/files/thumb/user/image.png"
+        },
+        "attachable":null
+    },
+    {
+        "id":4512451,
+        "name":"logo.png",
+        "byte_size":"13598",
+        "created_at":"2013-12-31T09:26:46+00:00",
+        "source":"upload",
+        "url":"https://companyurl.proofhub.com/files/thumb/user/image.png",
+        "creator":{
+            "id":4634893,
+            "name":"Chris Wagleys",
+            "image_url":null
+        }
+    }
 ]
 ```
 

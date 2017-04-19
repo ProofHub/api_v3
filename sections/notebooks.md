@@ -14,33 +14,33 @@ Get all notebooks
 
 ```json
 [
-      {
-      "id": 412467490,
-      "title": "Book having requirements",
-      "created_at": "2016-12-27T12:08:57+00:00",
-      "updated_at": "2016-12-27T12:11:08+00:00",
-      "pinned": false,
-      "by_me": true,
-      "project": {
-        "id": "857779124"
-      },
-      "creator": {
-        "id": 242125851
-      }
+    {
+        "id":412467490,
+        "title":"Book having requirements",
+        "created_at":"2016-12-27T12:08:57+00:00",
+        "updated_at":"2016-12-27T12:11:08+00:00",
+        "pinned":false,
+        "by_me":true,
+        "project":{
+            "id":"857779124"
+        },
+        "creator":{
+            "id":242125851
+        }
     },
-     {
-      "id": 412467490,
-      "title": "Blog writing",
-      "created_at": "2016-12-27T12:08:57+00:00",
-      "updated_at": "2016-12-27T12:11:08+00:00",
-      "pinned": false,
-      "by_me": true,
-      "project": {
-        "id": "857779124"
-      },
-      "creator": {
-        "id": 242125851
-      }
+    {
+        "id":412467490,
+        "title":"Blog writing",
+        "created_at":"2016-12-27T12:08:57+00:00",
+        "updated_at":"2016-12-27T12:11:08+00:00",
+        "pinned":false,
+        "by_me":true,
+        "project":{
+            "id":"857779124"
+        },
+        "creator":{
+            "id":242125851
+        }
     }
 ]
 ```
@@ -51,20 +51,20 @@ Get notebook
 * `GET v3/projects/23423233/notebooks/13964085196` will return the specified notebook.
 
 ```json
- {
-      "id": 412467490,
-      "title": "Book having requirements",
-      "created_at": "2016-12-27T12:08:57+00:00",
-      "updated_at": "2016-12-27T12:11:08+00:00",
-      "pinned": false,
-      "by_me": true,
-      "project": {
-        "id": "857779124"
-      },
-      "creator": {
-        "id": 242125851
-      }
+{
+    "id":412467490,
+    "title":"Book having requirements",
+    "created_at":"2016-12-27T12:08:57+00:00",
+    "updated_at":"2016-12-27T12:11:08+00:00",
+    "pinned":false,
+    "by_me":true,
+    "project":{
+        "id":"857779124"
+    },
+    "creator":{
+        "id":242125851
     }
+}
 ```
 
 Create notebook

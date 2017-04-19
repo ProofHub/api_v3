@@ -10,29 +10,29 @@ Get languages
 
 ```json
 [
-  {
-    "language": "en",
-    "title": "English"
-  },
-  {
-    "language": "fr",
-    "title": "French"
-  },
-  {
-    "language": "de",
-    "title": "German"
-  },
-  {
-    "language": "pl",
-    "title": "Polish"
-  },
-  {
-    "language": "pt",
-    "title": "Portuguese"
-  },
-  {
-    "language": "es",
-    "title": "Spanish"
-  }
+    {
+        "language": "en",
+        "title": "English"
+    },
+    {
+        "language": "fr",
+        "title": "French"
+    },
+    {
+        "language": "de",
+        "title": "German"
+    },
+    {
+        "language": "pl",
+        "title": "Polish"
+    },
+    {
+        "language": "pt",
+        "title": "Portuguese"
+    },
+    {
+        "language": "es",
+        "title": "Spanish"
+    }
 ]
 ```

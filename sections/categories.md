@@ -37,7 +37,7 @@ Get Category
 	"id":65707070,
 	"name":"Marketing Projects",
 	"default":false
-	}
+}
 ```
 
 Create Category
@@ -61,7 +61,7 @@ Update category
 
 ```json
 {
-	"name": "Rockwall Phase II",
+	"name": "Rockwall Phase II"
 }
 ```
 
