@@ -23,7 +23,6 @@ Get all todolists
         "remaining_count":8,
         "time_tracking":false,
         "show_in_gantt":false,
-        "show_in_kanban":true,
         "updated_at":"2016-11-08T10:30:05+00:00",
         "created_at":"2016-11-08T07:49:15+00:00",
         "assigned":[
@@ -54,7 +53,6 @@ Get all todolists
         "remaining_count":0,
         "time_tracking":true,
         "show_in_gantt":true,
-        "show_in_kanban":true,
         "updated_at":"2016-11-10T10:02:00+00:00",
         "created_at":"2016-11-10T06:41:04+00:00",
         "assigned":[
@@ -94,7 +92,6 @@ Get todolist
     "remaining_count":8,
     "time_tracking":false,
     "show_in_gantt":false,
-    "show_in_kanban":true,
     "updated_at":"2016-11-08T10:30:05+00:00",
     "created_at":"2016-11-08T07:49:15+00:00",
     "assigned":[
@@ -130,7 +127,6 @@ Create todolist
     "private":false,
     "time_tracking":false,
     "show_in_gantt":true,
-    "show_in_kanban":true,
     "assigned":[
         12009183
     ]
