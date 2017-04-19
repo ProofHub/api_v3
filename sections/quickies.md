@@ -86,7 +86,7 @@ Update quickie
 }
 ```
 
-`200 OK` will be returned along with the JSON of the quickie ([Get qickies](#get-quickies)) if the record is updated. `403 Forbidden` will be returned in case of invalid access.
+`200 OK` will be returned along with the JSON of the quickie ([Get quickies](#get-quickies)) if the record is updated. `403 Forbidden` will be returned in case of invalid access.
 
 Complete quickie
 ----------------
@@ -99,7 +99,7 @@ Complete quickie
 }
 ```
 
-`200 OK` will be returned along with the JSON of the quickie ([Get qickies](#get-quickies)) if the record is updated. `403 Forbidden` will be returned in case of invalid access.
+`200 OK` will be returned along with the JSON of the quickie ([Get quickies](#get-quickies)) if the record is updated. `403 Forbidden` will be returned in case of invalid access.
 
 Delete quickie
 ----------------
