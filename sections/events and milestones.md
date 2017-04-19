@@ -16,55 +16,55 @@ Get all events
 ```json
 [
 	{
-      "id": 643515557,
-      "title": "Coming soon",
-      "start": "2016-12-28 00:00",
-      "end": "2016-12-28 23:59",
-      "all_day": false,
-      "reminder": null,
-      "milestone": false,
-      "private": false,
-      "completed": false,
-      "assigned": [
-        242125851
-      ],
-      "description": "Details will follow",
-      "updated_at": "2016-12-27T07:46:24+00:00",
-      "created_at": "2016-12-27T07:46:24+00:00",
-      "by_me": true,
-      "creator": {
-        "id": 242125851
-      },
-      "project": {
-        "id": 857779124,
-        "name": "PH Marketing"
-      }
-    },
-	 {
-      "id": 643501988,
-      "title": "Target completed",
-      "start": "2016-12-27 00:00",
-      "end": "2016-12-27 23:59",
-      "all_day": true,
-      "reminder": null,
-      "milestone": true,
-      "private": false,
-      "completed": false,
-      "assigned": [
-        242125851
-      ],
-      "description": null,
-      "updated_at": "2016-12-27T06:07:53+00:00",
-      "created_at": "2016-12-27T06:07:53+00:00",
-      "by_me": true,
-      "creator": {
-        "id": 242125851
-      },
-      "project": {
-        "id": 857779124,
-        "name": "PH Marketing"
-      }
-    }
+		"id": 643515557,
+		"title": "Coming soon",
+		"start": "2016-12-28 00:00",
+		"end": "2016-12-28 23:59",
+		"all_day": false,
+		"reminder": null,
+		"milestone": false,
+		"private": false,
+		"completed": false,
+		"assigned": [
+			242125851
+		],
+		"description": "Details will follow",
+		"updated_at": "2016-12-27T07:46:24+00:00",
+		"created_at": "2016-12-27T07:46:24+00:00",
+		"by_me": true,
+		"creator": {
+			"id": 242125851
+		},
+		"project": {
+			"id": 857779124,
+			"name": "PH Marketing"
+		}
+	},
+	{
+		"id": 643501988,
+		"title": "Target completed",
+		"start": "2016-12-27 00:00",
+		"end": "2016-12-27 23:59",
+		"all_day": true,
+		"reminder": null,
+		"milestone": true,
+		"private": false,
+		"completed": false,
+		"assigned": [
+			242125851
+		],
+		"description": null,
+		"updated_at": "2016-12-27T06:07:53+00:00",
+		"created_at": "2016-12-27T06:07:53+00:00",
+		"by_me": true,
+		"creator": {
+			"id": 242125851
+		},
+		"project": {
+			"id": 857779124,
+			"name": "PH Marketing"
+		}
+	}
 ]
 ```
 
@@ -75,30 +75,30 @@ Get event
 
 ```json
 {
-      "id": 643515557,
-      "title": "Coming soon",
-      "start": "2016-12-28 00:00",
-      "end": "2016-12-28 23:59",
-      "all_day": false,
-      "reminder": null,
-      "milestone": false,
-      "private": false,
-      "completed": false,
-      "assigned": [
-        242125851
-      ],
-      "description": "Details will follow",
-      "updated_at": "2016-12-27T07:46:24+00:00",
-      "created_at": "2016-12-27T07:46:24+00:00",
-      "by_me": true,
-      "creator": {
-        "id": 242125851
-      },
-      "project": {
-        "id": 857779124,
-        "name": "PH Marketing"
-      }
-    }
+	"id": 643515557,
+	"title": "Coming soon",
+	"start": "2016-12-28 00:00",
+	"end": "2016-12-28 23:59",
+	"all_day": false,
+	"reminder": null,
+	"milestone": false,
+	"private": false,
+	"completed": false,
+	"assigned": [
+      		242125851
+	],
+	"description": "Details will follow",
+	"updated_at": "2016-12-27T07:46:24+00:00",
+	"created_at": "2016-12-27T07:46:24+00:00",
+	"by_me": true,
+	"creator": {
+		"id": 242125851
+	},
+	"project": {
+		"id": 857779124,
+		"name": "PH Marketing"
+	}
+}
 ```
 
 Create event
