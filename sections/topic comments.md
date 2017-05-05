@@ -99,26 +99,24 @@ Get comments
 * `GET v3/projects/23423233/topics/25299755/comments/25299972` will return specified comment of the topic. 
 
 ```json
-[
-    {
-        "id":25299972,
-        "updated_at":"2016-12-28T05:54:59+00:00",
-        "created_at":"2016-12-28T05:54:59+00:00",
-        "proofed":false,
-        "description":"Very informative with plenty of examples of good and not-so-good Web marketing",
-        "creator":{
-            "id":12009183
-        },
-        "project":{
-            "id":23423233
-        },
-        "topic":{
-            "id":25299755
-        },
-        "by_me":true,
-        "attachments":null
-    }
-]
+{
+    "id":25299972,
+    "updated_at":"2016-12-28T05:54:59+00:00",
+    "created_at":"2016-12-28T05:54:59+00:00",
+    "proofed":false,
+    "description":"Very informative with plenty of examples of good and not-so-good Web marketing",
+    "creator":{
+        "id":12009183
+    },
+    "project":{
+        "id":23423233
+    },
+    "topic":{
+        "id":25299755
+    },
+    "by_me":true,
+    "attachments":null
+}
 ```
 
 

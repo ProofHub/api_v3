@@ -75,35 +75,33 @@ Get timesheet
 * `GET v3/projects/23423233/timesheets/23570135` will return the specified timesheet along with the time entries made in it.
 
 ```json
-[
-    {
-        "id":23570135,
-        "title":"Prepare training material",
-        "estimated_hours":100,
-        "estimated_mins":null,
-        "logged_hours":10,
-        "logged_mins":30,
-        "billable_hours":null,
-        "billable_mins":null,
-        "billed_hours":null,
-        "billed_mins":null,
-        "creator":{
-            "id":12009183
-        },
-        "project":{
-            "id":23423233
-        },
-        "assigned":[
-            12009183,
-            11679192
-        ],
-        "private":true,
-        "archived":false,
-        "created_at":"2016-09-30T05:12:09+00:00",
-        "updated_at":"2016-09-30T05:26:41+00:00",
-        "by_me":true
-    }
-]  
+{
+    "id":23570135,
+    "title":"Prepare training material",
+    "estimated_hours":100,
+    "estimated_mins":null,
+    "logged_hours":10,
+    "logged_mins":30,
+    "billable_hours":null,
+    "billable_mins":null,
+    "billed_hours":null,
+    "billed_mins":null,
+    "creator":{
+        "id":12009183
+    },
+    "project":{
+        "id":23423233
+    },
+    "assigned":[
+        12009183,
+        11679192
+    ],
+    "private":true,
+    "archived":false,
+    "created_at":"2016-09-30T05:12:09+00:00",
+    "updated_at":"2016-09-30T05:26:41+00:00",
+    "by_me":true
+}
 ```
 Create timesheet
 ----------------
