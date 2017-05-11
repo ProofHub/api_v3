@@ -299,7 +299,7 @@ Get all subtasks
     {
         "id": 13966759,
         "title": "Send the created document to all the people responsible.",
-        "description": null",
+        "description": null,
         "start_date": null,
         "due_date": null,
         "estimated_hours": 20,
