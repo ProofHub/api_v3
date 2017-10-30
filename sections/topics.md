@@ -175,7 +175,7 @@ https://github.com/sdplabs/proofhub-api/blob/master/sections/attachments.md#crea
 	"attachments":[
 		{
 			"id":123456,
-		},		
+		}		
 	],
 	"assigned":[12009183, 11679192]
 }
@@ -191,7 +191,7 @@ Update topic
 	"title":"Modify the topic for discussion",
 	"description":"Topic content...",
 	"private":true,
-    "assigned":[12009183, 11679192]
+        "assigned":[12009183, 11679192]
 }
 ```
 
