@@ -195,7 +195,7 @@ Create task
 **Attaching files**
 
 Attaching files to a task requires both the token and the name of the attachment. The token is obtained from the [Create attachments](
-https://github.com/ProofHub/api_v3/blob/master/sections/attachemnts.md#create-attachment) endpoint, which you must hit first before creating an upload. The name parameter must be a valid filename with an extension. Multiple attachments are allowed. Set folder to `0` if you don't want to upload file in any folder.
+https://github.com/ProofHub/api_v3/blob/master/sections/attachments.md#create-attachment) endpoint, which you must hit first before creating an upload. The name parameter must be a valid filename with an extension. Multiple attachments are allowed. Set folder to `0` if you don't want to upload file in any folder.
 
 ```json
 {
