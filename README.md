@@ -4,9 +4,9 @@ This RESTful API is an interface to the resources in ProofHub e.g. Projects, Dis
 
 If you are new to REST, you can understand the basics at http://en.wikipedia.org/wiki/REST. ProofHub's RESTful API accepts and returns JSON for serialisation.
 
-API key
+Getting an API key
 ----------------
-With every request you'll need to pass the ProofHub account's API key. The key can be generated from the ProofHub Settings tab.
+Any user can get their own API key by visiting the Manage profile dropdown and clicking 5 times on the profile picture. The API key of the logged in user will be displayed in the pop up window opened.
 
 Making a request
 ----------------
