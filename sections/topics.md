@@ -175,12 +175,7 @@ https://github.com/sdplabs/proofhub-api/blob/master/sections/attachments.md#crea
 	"attachments":[
 		{
 			"id":123456,
-		},
-		{
-			"token":"UVBEbHZkc2puN3h3VHB2cDlZQ3JWdz09",
-			"name":"graphs.png",
-			"folder":0
-		}
+		},		
 	],
 	"assigned":[12009183, 11679192]
 }
