@@ -61,7 +61,6 @@ Create file
 	"attachments":[
 		{
 			"attachments": [10966416],
-                        "folder": 1326184710
 		}
 	]
 }
