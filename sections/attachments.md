@@ -3,7 +3,7 @@ Attachments
 
 Uploading files to ProofHub is a two step process:
 
-* Create the attachment, receive a token verifying the upload was successful.
+* Create the attachment, receive a attachment id verifying the upload was successful.
 * Attach the file to a topic, comment, task or file section. See the following endpoints for attaching:
 	* [Create topic](https://github.com/ProofHub/api_v3/blob/master/sections/topics.md#create-topic)
 	* [Create comment](https://github.com/ProofHub/api_v3/blob/master/sections/comments.md#create-comment)
