@@ -161,10 +161,9 @@ Create topic
 
 `201 Created` will be returned along with the JSON of the topic ([Get topic](#get-topic)) if the record is added. `403 Forbidden` will be returned in case of invalid access.
 
-**Attaching files**
+Attaching files to a topic requires id of the attachment. The id is obtained from the [Create attachments](
+https://github.com/sdplabs/proofhub-api/blob/master/sections/attachments.md#create-attachment) endpoint, which you must hit first before creating an upload. Multiple attachments are allowed. 
 
-Attaching files to a topic requires both the token and the name of the attachment. The token is obtained from the [Create attachments](
-https://github.com/ProofHub/api_v3/blob/master/sections/attachemnts.md#create-attachment) endpoint, which you must hit first before creating an upload. The name parameter must be a valid filename with an extension. Multiple attachments are allowed. Set folder to `0` if you don't want to upload file in any folder.
 
 ```json
 {
@@ -173,9 +172,7 @@ https://github.com/ProofHub/api_v3/blob/master/sections/attachemnts.md#create-at
 	"private":true,
 	"attachments":[
 		{
-			"token":"WSt5b0JZdFZjRjNST1BXblhQRnk5QT09",
-			"name":"sample.jpg",
-			"folder":72921132
+			"id":123456,
 		},
 		{
 			"token":"UVBEbHZkc2puN3h3VHB2cDlZQ3JWdz09",
