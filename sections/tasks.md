@@ -410,10 +410,9 @@ Create subtask
 
 `201 Created` will be returned along with the JSON of the subtask ([Get subtask](#get-subtask)) if the record is added. `403 Forbidden` will be returned in case of invalid access.
 
-**Attaching files**
+Attaching files to a task requires id of the attachment. The id is obtained from the [Create attachments](
+https://github.com/sdplabs/proofhub-api/blob/master/sections/attachments.md#create-attachment) endpoint, which you must hit first before creating an upload. Multiple attachments are allowed. 
 
-Attaching files to a task requires both the token and the name of the attachment. The token is obtained from the [Create attachments](
-https://github.com/sdplabs/proofhub-api/blob/master/sections/attachemnts.md#create-attachment) endpoint, which you must hit first before creating an upload. The name parameter must be a valid filename with an extension. Multiple attachments are allowed. Set folder to `0` if you don't want to upload file in any folder.
 
 ```json
 {
@@ -423,12 +422,10 @@ https://github.com/sdplabs/proofhub-api/blob/master/sections/attachemnts.md#crea
     "due_date":"2013-12-31",
     "estimated_hrs":"2",
     "attachments":[
-        {
-            "token":"eUhSL2psVCtWaXU1aG0rOXNCMk1Vdz09",
-            "name":"document.doc",
-            "folder":0
-        }
-    ],
+		{
+			"id":"123456"
+		}
+	],
     "assigned":[12009183, 5895623],
     "labels":[12254912, 12254913]
 }
