@@ -20,6 +20,7 @@ Get all topics
         "description":"Introduction for discussing the marketing process",
         "private":false,
         "archived":false,
+	"pinned": false,
         "comments":{
             "count":0
         },
@@ -44,6 +45,9 @@ Get all topics
         "id":25299972,
         "title":"Marketing Strategy",
         "description":"Topic to discuss the marketing strategy for PH",
+	"private": false,
+        "archived": false,
+        "pinned": true,
         "comments":{
             "count":2
         },
@@ -77,6 +81,7 @@ Get topic
     "title":"Marketing Strategy",
     "description":"Topic to discuss the marketing strategy for PH",
     "private":false,
+    "pinned": true,
     "archived":false,
     "comments":{
         "count":2
