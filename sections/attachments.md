@@ -14,16 +14,16 @@ Uploading files to ProofHub is a two step process:
 Create attachments
 ----------------
 
-* `POST /attachments.json` uploads a file. The request body should be the binary data of the attachment. Make sure to set the Content-Type and Content-Length headers. Here is an example:
+* `POST /files/upload` uploads a file. The request body should be the binary data of the attachment. Make sure to set the Content-Type header. Here is an example:
 
 ```shell
-curl --data-binary @sample.png -H 'X-API-KEY: YOUR API KEY, Content-Type: image/png, User-Agent: AppName (name@example.com)' https://api.proofhub.com/v1/attachments.json
+curl --data-binary @sample.png --data project = 23423233 -H 'X-API-KEY: YOUR API KEY, Content-Type: multipart/form-data, User-Agent: AppName (name@example.com)' https://files.proofhub.com/files/upload
 ```
 
-Once the upload is successful, you'll get a 200 OK response, and we'll give you a token back that you'll need to save locally to attach the file.
+Once the upload is successful, you'll get a 200 OK response, and we'll give you an attachment id back that you'll need to save locally to attach the file.
 
 ```json
 {
-	"token": "UVBEbHZkc2puN3h3VHB2cDlZQ3JWdz09"
+  "file_id": 10890757
 }
 ```
