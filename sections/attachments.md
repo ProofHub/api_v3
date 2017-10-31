@@ -17,7 +17,7 @@ Create attachments
 * `POST /files/upload` uploads a file. The request body should be the binary data of the attachment. Make sure to set the Content-Type header. Here is an example:
 
 ```shell
-curl --data-binary @sample.png --data project = 23423233 -H 'X-API-KEY: YOUR API KEY, Content-Type: multipart/form-data, User-Agent: AppName (name@example.com)' https://files.proofhub.com/files/upload
+curl --data-binary @sample.png --data project = 23423233 -H 'X-API-KEY: YOUR API KEY, User-Agent: AppName (name@example.com)' https://files.proofhub.com/files/upload
 ```
 
 Once the upload is successful, you'll get a 200 OK response, and we'll give you an attachment id back that you'll need to save locally to attach the file.
