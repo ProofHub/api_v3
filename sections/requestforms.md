@@ -1,10 +1,10 @@
 Request forms
 ====================
-* [Get request forms](#get-requestform)
-* [Get request form](#get-requestform)
-* [Create request form](#create-requestform)
-* [Update requestform](#update-requestform)
-* [Delete request form](#delete-requestform)
+* [Get request forms](#get-request-form)
+* [Get request form](#get-request-form)
+* [Create request form](#create-request-form)
+* [Update request form](#update-request-form)
+* [Delete request form](#delete-request-form)
 
 Get all request forms
 ----------------
@@ -105,7 +105,7 @@ Create request form
     }
 ```
 
-`200 OK` will be returned along with the JSON of the request form ([Get requestform](#get-requestform)) if the record is added. 
+`200 OK` will be returned along with the JSON of the request form ([Get request form](#get-request-form)) if the record is added. 
 
 
 Update request form
@@ -119,7 +119,7 @@ Update request form
     }
 ```
 
-`200 OK` will be returned along with the JSON of the request form ([Get quickies](#get-requestform)) if the record is updated. `403 Forbidden` will be returned in case of invalid access.
+`200 OK` will be returned along with the JSON of the request form ([Get quickies](#get-request-form)) if the record is updated. `403 Forbidden` will be returned in case of invalid access.
 
 Delete request form
 ----------------

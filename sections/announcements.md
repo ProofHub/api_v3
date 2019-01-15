@@ -1,10 +1,10 @@
 Announcements
 ====================
 * [Get announcements](#get-announcements)
-* [Get announcement](#get-announcements)
-* [Create announcement](#create-announcements)
-* [Update announcement](#update-announcements)
-* [Delete announcement](#delete-announcements)
+* [Get announcement](#get-announcement)
+* [Create announcement](#create-announcement)
+* [Update announcement](#update-announcement)
+* [Delete announcement](#delete-announcement)
 * [Get all comments](#get-all-comments)
 * [Get comment](#get-comment)
 * [Create comment](#create-comment)
