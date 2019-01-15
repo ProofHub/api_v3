@@ -102,7 +102,7 @@ Create time
 }
 ```
 
-`201 Created` will be returned along with the JSON of the time entry if the record is added. `403 Forbidden` will be returned in case of invalid access.
+`200 OK` will be returned along with the JSON of the time entry if the record is added. `403 Forbidden` will be returned in case of invalid access.
 
 Update time
 ----------------
@@ -136,30 +136,32 @@ Start timer
 
 ```json
 {
+    "project_id":23423233,
+    "timesheet_id":23570135,
 	"timer_status":"start"
 }
 ```
+
+`200 OK` will be returned along with the JSON of the time entry if the record is added. `403 Forbidden` will be returned in case of invalid access.
 
 
 Pause timer
 ----------------
 
-* `PUT v3/timer` will pause if automatic timer is running for the user.
+* `PUT v3/timer/2357013` will pause if automatic timer is running for the user.
 
 ```json
 {
+    "pause_time":"05:02:21",
 	"timer_status":"pause"
 }
 ```
 
+`200 OK` will be returned along with the JSON of the time entry if the record is updated. `403 Forbidden` will be returned in case of invalid access.
 
 Stop timer
 ----------------
 
-* `PUT v3/timer` will stop if automatic timer is running for the user.
+* `DELETE v3/timer/2357013` will delete if automatic timer is running for the user.
 
-```json
-{
-	"timer_status":"stop"
-}
-```
+`204 No Content` will be returned if the record is deleted. `403 Forbidden` will be returned in case of invalid access.

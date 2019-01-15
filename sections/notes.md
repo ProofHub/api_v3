@@ -223,6 +223,9 @@ Create comment
 }
 ```
 
+`200 OK` will be returned along with the JSON of the note ([Get comment](#get-note-comment)) if the record is updated. `403 Forbidden` will be returned in case of invalid access.
+
+
 Update comment
 ----------------
 

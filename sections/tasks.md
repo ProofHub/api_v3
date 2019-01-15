@@ -190,7 +190,7 @@ Create task
 }
 ```
 
-`201 Created` will be returned along with the JSON of the task ([Get task](#get-task)) if the record is added. `403 Forbidden` will be returned in case of invalid access.
+`200 OK` will be returned along with the JSON of the task ([Get task](#get-task)) if the record is added. `403 Forbidden` will be returned in case of invalid access.
 
 **Attaching files**
 
@@ -228,6 +228,8 @@ Update task
 	"due_date":"2013-12-31"
 }
 ```
+
+`200 OK` will be returned along with the JSON of the task ([Get task](#get-task)) if the record is updated. `403 Forbidden` will be returned in case of invalid access.
 
 Complete task
 ----------------
@@ -408,7 +410,7 @@ Create subtask
 }
 ```
 
-`201 Created` will be returned along with the JSON of the subtask ([Get subtask](#get-subtask)) if the record is added. `403 Forbidden` will be returned in case of invalid access.
+`200 OK` will be returned along with the JSON of the subtask ([Get subtask](#get-subtask)) if the record is added. `403 Forbidden` will be returned in case of invalid access.
 
 Attaching files to a task requires id of the attachment. The id is obtained from the [Create attachments](
 https://github.com/sdplabs/proofhub-api/blob/master/sections/attachments.md#create-attachment) endpoint, which you must hit first before creating an upload. Multiple attachments are allowed. 
@@ -443,6 +445,8 @@ Update subtask
     "due_date":"2013-12-31"
 }
 ```
+
+`200 OK` will be returned along with the JSON of the subtask ([Get subtask](#get-subtask)) if the record is updated. `403 Forbidden` will be returned in case of invalid access.
 
 Complete subtask
 ----------------
@@ -553,6 +557,7 @@ Create comment
 	"description":"Call with client"
 }
 ```
+`200 OK` will be returned along with the JSON of the comment ([Get comment](#get-comment)) if the record is added. `403 Forbidden` will be returned in case of invalid access.
 
 Update comment
 ----------------
@@ -564,6 +569,8 @@ Update comment
 	"description":"Call with client"
 }
 ```
+
+`200 OK` will be returned along with the JSON of the comment ([Get comment](#get-comment)) if the record is added. `403 Forbidden` will be returned in case of invalid access.
 
 
 Delete comment
@@ -678,6 +685,8 @@ Create label
 }
 ```
 
+`200 OK` will be returned along with the JSON of the label ([Get label](#get-label)) if the record is added. `403 Forbidden` will be returned in case of invalid access.
+
 Update label
 ----------------
 
@@ -689,6 +698,7 @@ Update label
 }
 ```
 
+`200 OK` will be returned along with the JSON of the label ([Get label](#get-label)) if the record is added. `403 Forbidden` will be returned in case of invalid access.
 
 Delete label
 ----------------
