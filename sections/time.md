@@ -138,7 +138,7 @@ Start timer
 {
     "project_id":23423233,
     "timesheet_id":23570135,
-	"timer_status":"start"
+    "timer_status":"start",
 }
 ```
 
@@ -153,7 +153,7 @@ Pause timer
 ```json
 {
     "pause_time":"05:02:21",
-	"timer_status":"pause"
+    "timer_status":"pause",
 }
 ```
 
