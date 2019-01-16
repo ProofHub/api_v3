@@ -1,6 +1,6 @@
 Request forms
 ====================
-* [Get request forms](#get-request-form)
+* [Get all request forms](#get-request-form)
 * [Get request form](#get-request-form)
 * [Create request form](#create-request-form)
 * [Update request form](#update-request-form)
@@ -34,7 +34,6 @@ Get all request forms
         "deleted":0,
         "deleted_by":195960,
         "deleted_source":null
-        }
     },
     {
        "id":3628560,

@@ -45,7 +45,8 @@ API endpoints
 * [Timesheets](https://github.com/ProofHub/api_v3/blob/master/sections/timesheets.md)
 * [Time](https://github.com/ProofHub/api_v3/blob/master/sections/time.md)
 * [Quickies](https://github.com/ProofHub/api_v3/blob/master/sections/quickies.md)
-
+* [Request forms](https://github.com/ProofHub/api_v3/blob/master/sections/requestform.md)
+* [Announcements](https://github.com/ProofHub/api_v3/blob/master/sections/announcements.md)
 
 
 Things to remember

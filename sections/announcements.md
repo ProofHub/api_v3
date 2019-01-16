@@ -154,7 +154,7 @@ Delete announcement
 `204 No Content` will be returned if the record is deleted. `403 Forbidden` will be returned in case of invalid access.
 
 
-Get all announcement comments
+Get all comments
 ----------------
 
 * `GET v3/announcements/3628560/comments` will return all the comments of specified announcement.
