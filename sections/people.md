@@ -124,9 +124,8 @@ Create person
 }
 ```
 
-Language includes `en`, `fr`. You can get the group from the [groups API](https://github.com/ProofHub/api_v3/blob/master/sections/groups.md).
+Language example `en`, `fr`. You can get supported languages from the [languages API](https://github.com/ProofHub/api_v3/blob/master/sections/languages.md).  You can get the group from the [groups API](https://github.com/ProofHub/api_v3/blob/master/sections/groups.md).
 
-`201 Created` will be returned along with the JSON of the person ([Get person](#get-person)) if the record is added. New people can also be invited directly to the [projects](https://github.com/ProofHub/api_v3/blob/master/sections/projects.md#assign-people-to-project).
 
 Update person
 ----------------
@@ -143,7 +142,7 @@ Update person
 }
 ```
 
-`200 OK` will be returned along with the JSON of the person ([Get person](#get-person)) if the record is updated. `403 Forbidden` will be returned in case of invalid access.
+`200 OK` will be returned along with the JSON of the person ([Get person](#get-person)) if the record is updated. You can get supported languages from the [languages API](https://github.com/ProofHub/api_v3/blob/master/sections/languages.md). `403 Forbidden` will be returned in case of invalid access.
 
 Delete person
 ----------------

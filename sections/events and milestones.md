@@ -10,7 +10,11 @@ Events
 Get all events
 ----------------
 
-* `GET v3/projects/23423233/events` will return events for this project.
+* `GET v3/projects/23423233/events?view=all&startDate=2019-02-25&endDate=2019-03-31` will return all events and milestones for this project. 
+* View filter is mandatory 
+* To get only milestones use: view=milestones
+* To get only events use: view=events
+* Start date and end date filters are optional
 
 
 ```json
