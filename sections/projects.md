@@ -6,6 +6,10 @@ Projects
 * [Create project](#create-project)
 * [Update project](#update-project)
 * [Delete project](#delete-project)
+* [Get project status](#get-project-status)
+* [Create project status](#create-project-status)
+* [Update project status](#update-project-status)
+* [Delete project status](#delete-project-status)
 
 
 Get all projects
@@ -20,6 +24,7 @@ Get all projects
         "title":"PH Marketing",
         "description":"Project description goes here",
         "archived":false,
+        "status":12345678,
         "color":"#41236D",
         "start_date":"2016-12-10",
         "end_date":"2016-12-15",
@@ -85,6 +90,7 @@ Get project
     "title":"PH Marketing",
     "description":"Project description goes here",
     "archived":false,
+    "status":12345678,
     "color":"#41236D",
     "start_date":"2016-12-10",
     "end_date":"2016-12-15",
@@ -120,6 +126,7 @@ Create project
 	"description":"DBX's campaign",
 	"category":651073331,
 	"start_date":"2016-12-10",
+    "status":12345678,
 	"end_date":"2016-12-15",
     "assigned": [
         12009183,
@@ -144,6 +151,7 @@ Update project
 	"title":"To the moon 2014",
 	"description":"DBX's campaign",
     "archived":false,
+    "status":12345678,
 	"category":651073331,
 	"start_date":"2016-12-10",
 	"end_date":"2016-12-15",
@@ -161,5 +169,53 @@ Delete project
 ----------------
 
 * `DELETE v3/projects/23423233` will delete the project.
+
+`204 No Content` will be returned if the record is deleted. `403 Forbidden` will be returned in case of invalid access.
+
+
+Get project status
+----------------
+
+* `GET v3/projectstatus/12345678` will return project status details.
+
+```json
+{
+    "id":12345678,
+    "title":"Active",
+    "is_default":true,
+    "created_at":"2016-06-24T12:18:26+00:00",
+    "updated_at":"2016-06-24T12:18:26+00:00"
+}
+```
+
+Create project status
+----------------
+
+* `POST v3/projectstatus` will create a new project status.
+
+```json
+{
+    "title":"Status name",
+}
+```
+
+`201 Created` will be returned along with the JSON of the project status ([Get project status](#get-project-status)) if the record is added. `403 Forbidden` will be returned in case of invalid access.
+
+Update project status
+----------------
+
+* `PUT v3/projectstatus/12345678` will update the project status from the parameters passed.
+
+```json
+{
+    "title":"status updated name",
+}
+```
+`200 OK` will be returned along with the JSON of the project status ([Get project status](#get-project-status)) if the record is updated. `403 Forbidden` will be returned in case of invalid access.
+
+Delete project status
+----------------
+
+* `DELETE v3/projectstatus/12345678` will delete the project status.
 
 `204 No Content` will be returned if the record is deleted. `403 Forbidden` will be returned in case of invalid access.
