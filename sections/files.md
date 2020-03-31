@@ -57,13 +57,12 @@ Create file
 * `POST /projects/23423233/folders/13261847/files` will create a new entry in the "Files" section for the given project, with the given attachment id. Attaching files requires the attachment id. The attachment id is returned from the Create attachments endpoint, which you must hit first before creating a file. Multiple attachments are allowed.
 
 ```json
-{
-	"attachments":[
-		{
-			"attachments": [10966416],
-		}
-	]
-}
+
+    {
+        "attachments": [10966416]
+    }
+	
+
 ```
 
 `201 Created` will be returned along with the JSON of the attachment if the record is added. `403 Forbidden` will be returned in case of invalid access.
