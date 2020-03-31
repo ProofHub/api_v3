@@ -6,6 +6,8 @@ Todolists
 * [Create todolist](#create-todolist)
 * [Update todolist](#update-todolist)
 * [Delete todolist](#delete-todolist)
+* [Copy todolist](#copy-todolist)
+* [Move todolist](#move-todolist)
 
 Get all todolists
 ----------------
@@ -155,3 +157,42 @@ Delete todolist
 * `DELETE v3/projects/23423233/todolists/13964085` will delete the todolist.
 
 `204 No Content` will be returned if the record is deleted. `403 Forbidden` will be returned in case of invalid access.
+
+Copy todolist
+----------------
+
+* `POST v3/projects/23423233/todolists/13964085` will create a duplicate copy of selected todolist from the parameters passed. A todolist can be copied into same project and different project as well. 
+
+```json
+{
+    "title":"Copy of second",
+    "project":145454545,
+    "copy_stages":true,
+    "copy_assignees":true,
+    "copy_dates":true,
+    "copy_comments":true,
+    "copy_list":13964085
+}
+```
+
+`201 Created` will be returned along with the JSON of the todolist ([Get todolist](#get-todolist)) if the record is added. `403 Forbidden` will be returned in case of invalid access.
+
+Move todolist
+----------------
+
+* `PUT v3/projects/23423233/todolists/13964085` will move selected todolist from the parameters passed. A todolist can be moved into different project. 
+
+```json
+{
+    "title":"Copy of second",
+    "project":145454545,
+    "move_stages":true,
+    "move_people":true,
+    "move_dates":true,
+    "proof_comment":true,
+    "id":13964085,
+    "move_list":true
+}
+```
+
+`200 OK` will be returned if the record is moved. `403 Forbidden` will be returned in case of invalid access.
