@@ -17,12 +17,14 @@ Tasks
 * [Update comment](#update-comment)
 * [Delete comment](#delete-comment)
 * [Get task history](#get-task-history)
-* [Get task history detail](#get-task-history-details)
+* [Get task history detail](#get-task-history-detail)
 * [Get all labels](#get-all-labels)
 * [Get label](#get-label)
 * [Create label](#create-label)
 * [Update label](#update-label)
 * [Delete label](#delete-label)
+* [Copy task](#copy-task)
+* [Move task](#move-task)
 
 Get all tasks
 ----------------
@@ -194,8 +196,8 @@ Create task
 
 **Attaching files**
 
-Attaching files to a task requires both the token and the name of the attachment. The token is obtained from the [Create attachments](
-https://github.com/ProofHub/api_v3/blob/master/sections/attachments.md#create-attachment) endpoint, which you must hit first before creating an upload. The name parameter must be a valid filename with an extension. Multiple attachments are allowed. Set folder to `0` if you don't want to upload file in any folder.
+Attaching files to a task requires id of the attachment. The id is obtained from the [Create attachments](
+https://github.com/ProofHub/api_v3/blob/master/sections/attachments.md#create-attachment) endpoint, which you must hit first before creating an upload. Multiple attachments are allowed.
 
 ```json
 {
@@ -206,8 +208,7 @@ https://github.com/ProofHub/api_v3/blob/master/sections/attachments.md#create-at
 	"estimated_hrs":"2",
 	"attachments":[
 		{
-			"token":"eUhSL2psVCtWaXU1aG0rOXNCMk1Vdz09",
-			"name":"document.doc",
+			"id":"123456",
 			"folder":0
 		}
 	],
@@ -470,7 +471,7 @@ Delete subtask
 
 
 
-Get all task comments
+Get all comments
 ----------------
 
 * `GET v3/projects/23423233/todolists/13964085/tasks/13966758/comments` will return all the comments of specified task.
@@ -706,3 +707,56 @@ Delete label
 * `DELETE v3/labels/12254912` will delete the label.
 
 204 No Content will be returned if the record is deleted. 403 Forbidden will be returned in case of invalid access.
+
+
+
+Copy task
+----------------
+
+* `POST v3/projects/23423233/todolists/13964085/tasks/13966758` will create a duplicate task from the parameters passed. A task can be copied into same todolist/project or different todolist/project.
+* The assigned array is an optional list of people IDs that you can get from the [people API](https://github.com/ProofHub/api_v3/blob/master/sections/people.md). 
+
+```json
+{
+   "title":"Copy of one",
+    "project":23423233,
+    "list_id":13964085,
+    "stage":123456,
+    "move_people":true,
+    "copy_assignees":true,
+    "copy_dates":true,
+    "proof_comment":true,
+    "copy_comments":true,
+    "completed":false,
+    "copy_task":13966758,
+    "parent_id":13966757 
+}
+```
+
+`200 OK` will be returned along with the JSON of the task ([Get task](#get-task)) if the record is added. `403 Forbidden` will be returned in case of invalid access.
+
+
+Move task
+----------------
+
+* `PUT v3/projects/23423233/todolists/13964085/tasks/13966758` will move the selected task from the parameters passed. A task can be moved into different todolist of same or different project.
+* The assigned array is an optional list of people IDs that you can get from the [people API](https://github.com/ProofHub/api_v3/blob/master/sections/people.md). 
+
+```json
+{
+   "title":"Copy of one",
+    "project":23423233,
+    "list_id":13964085,
+    "stage":123456,
+    "move_people":true,
+    "copy_assignees":true,
+    "move_dates":true,
+    "proof_comment":true,
+    "copy_comments":true,
+    "completed":false,
+    "move_task":true,
+    "id":13966757    
+}
+```
+
+`200 OK` will be returned along with the JSON of the task ([Get task](#get-task)) if the record is added. `403 Forbidden` will be returned in case of invalid access.
