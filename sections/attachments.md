@@ -6,7 +6,6 @@ Uploading files to ProofHub is a two step process:
 * Create the attachment, receive a attachment id verifying the upload was successful.
 * Attach the file to a topic, comment, task or file section. See the following endpoints for attaching:
 	* [Create topic](https://github.com/ProofHub/api_v3/blob/master/sections/topics.md#create-topic)
-	* [Create comment](https://github.com/ProofHub/api_v3/blob/master/sections/comments.md#create-comment)
 	* [Create task](https://github.com/ProofHub/api_v3/blob/master/sections/tasks.md#create-task)
 	* [Create file](https://github.com/ProofHub/api_v3/blob/master/sections/files.md#create-file)
 
@@ -14,16 +13,35 @@ Uploading files to ProofHub is a two step process:
 Create attachments
 ----------------
 
-* `POST /files/upload` uploads a file. The request body should be the binary data of the attachment. Make sure to set the Content-Type header. Here is an example:
+* `POST /files/upload` uploads a file. The request body should be the binary data of the attachment. Make sure to set the Content-Type header.
 
-```shell
-curl --data-binary @sample.png --data project = 23423233 -H 'X-API-KEY: YOUR API KEY, User-Agent: AppName (name@example.com)' https://files.proofhub.com/files/upload
-```
+```File uploading via API is a two-step process.
 
-Once the upload is successful, you'll get a 200 OK response, and we'll give you an attachment id back that you'll need to save locally to attach the file.
+1. First, you need to get the File ID using the request URL: 
+
+POST /files/upload.php  
+
+In the headers, you need to pass the x-api-key and in the body (form data) you need to pass the project id and upload the file as:
+
+Key: project, value: "project id"
+file (type file): select the file.
+
+In the response of this request, you'll get the "file_id".
+
+2. The next step is to attach the file with the help of "file_id" you have received.
+
+The request URL would be,
+
+POST  /api/v3/projects/project_id/folders/folder_id/files"
+
+Headers:
+
+x-api-key
+Content-type Application/JSON
+
 
 ```json
 {
-  "file_id": 10890757
+  "attachments": [file_id]
 }
 ```
