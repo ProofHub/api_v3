@@ -256,7 +256,7 @@ Delete task
 Get all subtasks
 ----------------
 
-* `GET v3/projects/23423233/todolists/13964085/tasks` will return subtasks for this task.
+* `GET v3/projects/23423233/todolists/13964085/tasks/13966758/subtasks` will return all the subtasks for this task.
 
 ```json
 [
