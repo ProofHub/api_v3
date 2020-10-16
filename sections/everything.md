@@ -80,7 +80,7 @@ Get all tasks
 
 `labels=<comma separated label id(s)>` or send `labelsl=none` to get only unlabelled tasks.
 
-`include_subtasks=<true/false>` Subtasks are included if this parameter is not sent in the request. Set this to false to remove subtasks in the response.
+`include_subtasks=<true/false>` Set this to false to remove subtasks in the response. Subtasks are included if this parameter is not sent in the request. 
 
 `assigned=<comma separated user id(s)>` Set this parameter to get tasks assigned to specific users. Set it as `assigned=all_assigned` to get only those tasks which are assigned to any users. All assigned & unassigned tasks are returned if this parameter is not included in the request.
 
