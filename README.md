@@ -47,6 +47,7 @@ API endpoints
 * [Quickies](https://github.com/ProofHub/api_v3/blob/master/sections/quickies.md)
 * [Request forms](https://github.com/ProofHub/api_v3/blob/master/sections/requestforms.md)
 * [Announcements](https://github.com/ProofHub/api_v3/blob/master/sections/announcements.md)
+* [Everything](https://github.com/ProofHub/api_v3/blob/master/sections/everything.md)
 
 
 Things to remember
