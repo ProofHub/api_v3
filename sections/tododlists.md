@@ -161,7 +161,7 @@ Delete todolist
 Copy todolist
 ----------------
 
-* `POST v3/projects/23423233/todolists/13964085` will create a duplicate copy of selected todolist from the parameters passed. A todolist can be copied into same project and different project as well. 
+* `POST v3/projects/23423233/todolists` will create a duplicate copy of selected todolist from the parameters passed. A todolist can be copied into same project and different project as well. 
 
 ```json
 {
