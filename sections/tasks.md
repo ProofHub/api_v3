@@ -34,89 +34,58 @@ Get all tasks
 ```json
 [
     {
-        "id":13966758,
-        "title":"Update the template document for the training material.",
-        "description":null,
-        "start_date":"2016-11-10",
-        "due_date":"2016-11-10",
-        "estimated_hours":10,
-        "estimated_mins":null,
-        "logged_hours":null,
-        "logged_mins":null,
-        "updated_at":"2016-11-10T11:41:44+00:00",
-        "created_at":"2016-11-10T11:41:44+00:00",
-        "completed":false,
-        "assigned":[
-            12009183,
-            11679192
+        "ticket": "20842",
+        "id": 985356917305,
+        "title": "Task 1",
+        "description": "Task description",
+        "start_date": null,
+        "due_date": null,
+        "estimated_hours": null,
+        "estimated_mins": null,
+        "logged_hours": null,
+        "logged_mins": null,
+        "updated_at": "2021-03-22T13:13:46+00:00",
+        "created_at": "2021-03-22T13:13:46+00:00",
+        "completed": false,
+        "assigned": [
+            8172598588
         ],
-        "labels":[
-            12254912
+        "labels": [
+            4766001983
         ],
-        "sub_tasks":0,
-        "task_history":null,
-        "percent_progress":0,
-        "attachments":[
-
-        ],
-        "comments":0,
-        "by_me":true,
-        "template":false,
-        "project":{
-            "id":23423233,
-            "name":"ProofHub marketing"
+        "sub_tasks": 0,
+        "rrule": null,
+        "task_history": null,
+        "percent_progress": 0,
+        "attachments": [],
+        "comments": 0,
+        "by_me": true,
+        "template": false,
+        "form_task": false,
+        "timesheet_id": null,
+        "user_stages": [],
+        "project": {
+            "id": 4469983073,
+            "name": "Castle"
         },
-        "creator":{
-            "id":12009183
+        "creator": {
+            "id": 7279827447
         },
-        "list":{
-            "id":13964085,
-            "name":"Training material on marketing"
-        }
-    },
-    {
-        "id":13966759,
-        "title":"Get the completed document reviewed and approved by each and every person responsible.",
-        "description":"Get the completed document reviewed and approved in detail.",
-        "start_date":null,
-        "due_date":null,
-        "estimated_hours":20,
-        "estimated_mins":30,
-        "logged_hours":20,
-        "logged_mins":30,
-        "updated_at":"2016-11-10T11:42:58+00:00",
-        "created_at":"2016-11-10T11:42:58+00:00",
-        "completed":true,
-        "assigned":[
-
-        ],
-        "labels":[
-
-        ],
-        "sub_tasks":1,
-        "task_history":"Marked as <i>complete</i>  on 10 Nov, 2016 11:52 PM by  Chris Wagleys<br>",
-        "percent_progress":100,
-        "completed_at":"2016-11-10T11:52:39+00:00",
-        "completed_by":12009183,
-        "attachments":[
-
-        ],
-        "comments":2,
-        "by_me":true,
-        "template":false,
-        "project":{
-            "id":23423233,
-            "name":"ProofHub marketing"
+        "list": {
+            "id": 169808767259,
+            "name": "Test Task List Alpha"
         },
-        "creator":{
-            "id":12009183
+        "workflow": {
+            "id": 2747398168,
+            "name": "Basic workflow"
         },
-        "list":{
-            "id":13964085,
-            "name":"Training material on marketing"
+        "stage": {
+            "id": 6074498296,
+            "name": "New"
         }
     }
 ]
+
 
 ```
 
@@ -126,48 +95,59 @@ Get task
 * `GET v3/projects/23423233/todolists/13964085/tasks/13966758` will return the specified task.
 
 ```json
+
 {
-    "id":13966758,
-    "title":"Get the completed document reviewed and approved by each and every person responsible.",
-    "description":"Get the completed document reviewed and approved in detail.",
-    "start_date":null,
-    "due_date":null,
-    "estimated_hours":20,
-    "estimated_mins":30,
-    "logged_hours":20,
-    "logged_mins":30,
-    "updated_at":"2016-11-10T11:42:58+00:00",
-    "created_at":"2016-11-10T11:42:58+00:00",
-    "completed":true,
-    "assigned":[
-
+    "ticket": "29842",
+    "id": 175398977305,
+    "title": "Task 1",
+    "description": "Task description",
+    "start_date": null,
+    "due_date": null,
+    "estimated_hours": null,
+    "estimated_mins": null,
+    "logged_hours": null,
+    "logged_mins": null,
+    "updated_at": "2021-03-22T13:13:46+00:00",
+    "created_at": "2021-03-22T13:13:46+00:00",
+    "completed": false,
+    "assigned": [
+        8172984588
     ],
-    "labels":[
-
+    "labels": [
+        4666981713
     ],
-    "sub_tasks":1,
-    "task_history":"Marked as <i>complete</i>  on 10 Nov, 2016 11:52 PM by  Chris<br>",
-    "percent_progress":100,
-    "completed_at":"2016-11-10T11:52:39+00:00",
-    "completed_by":12009183,
-    "attachments":[
-
-    ],
-    "comments":2,
-    "by_me":true,
-    "template":false,
-    "project":{
-        "id":23423233,
-        "name":"ProofHub marketing"
+    "sub_tasks": 0,
+    "rrule": null,
+    "task_history": null,
+    "percent_progress": 0,
+    "attachments": [],
+    "comments": 0,
+    "by_me": true,
+    "template": false,
+    "form_task": false,
+    "timesheet_id": null,
+    "user_stages": [],
+    "project": {
+        "id": 4769703983,
+        "name": "Castle"
     },
-    "creator":{
-        "id":12009183
+    "creator": {
+        "id": 7277982447
     },
-    "list":{
-        "id":13964085,
-        "name":"Training material on marketing"
+    "list": {
+        "id": 168988677259,
+        "name": "Test Task List Alpha"
+    },
+    "workflow": {
+        "id": 2747329868,
+        "name": "Basic workflow"
+    },
+    "stage": {
+        "id": 6074498296,
+        "name": "New"
     }
 }
+
 ```
 Create task
 ----------------
