@@ -164,7 +164,7 @@ Create topic
 **Attaching files**
 
 Attaching files to a topic requires id of the attachment. The id is obtained from the [Create attachments](
-https://github.com/sdplabs/proofhub-api/blob/master/sections/attachments.md#create-attachment) endpoint, which you must hit first before creating an upload. Multiple attachments are allowed. 
+https://github.com/ProofHub/api_v3/blob/master/sections/attachments.md#create-attachments) endpoint, which you must hit first before creating an upload. Multiple attachments are allowed. 
 
 
 ```json
