@@ -45,5 +45,7 @@ Content-type:Application/JSON
   "folder": <folder id>
   "attachments": <file_id>
 }
-```
+
 If the folder parameter is not specified, the file will be uploaded in "All files".
+```
+
