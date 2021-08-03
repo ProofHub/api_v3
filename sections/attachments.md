@@ -17,14 +17,14 @@ Create attachments
 
 ```File uploading via API is a two-step process.
 
-1. First, you need to get the File ID using the request URL: 
+1. First, you need to get the file ID using the request URL: 
 
 POST /files/upload.php  
 
 In the headers, you need to pass the x-api-key and in the body (form data) you need to pass the project id and upload the file as:
 
-Key: project, value: "project id"
-file (type file): select the file.
+pid:<project id>
+file:<select the file>
 
 In the response of this request, you'll get the "file_id".
 
@@ -32,16 +32,18 @@ In the response of this request, you'll get the "file_id".
 
 The request URL would be,
 
-POST  /api/v3/projects/project_id/folders/folder_id/files"
+POST  /api/v3/projects/<project_id>/folders/<folder_id>/files"
 
 Headers:
 
 x-api-key
-Content-type Application/JSON
+Content-type:Application/JSON
 
 
 ```json
 {
-  "attachments": [file_id]
+  "folder": <folder id>
+  "attachments": <file_id>
 }
 ```
+If the folder parameter is not specified, the file will be uploaded in "All files".
