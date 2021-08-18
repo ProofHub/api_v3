@@ -83,6 +83,7 @@ Get todolist
 ----------------
 
 * `GET v3/projects/23423233/todolists/13964085` will return the specified todolist.
+* This API also returns any custom fields created on this todolist.
 
 ```json
 {
@@ -112,8 +113,133 @@ Get todolist
         "id":null
     },
     "creator":{
-        "id":12009183
-    }
+        "id":866559183
+    },
+    "workflow":{
+           "id": 8767866337,
+           "name": "Flow of work"
+       },
+       "custom_fields": [
+           {
+               "id": 76672841,
+               "title": "Tags",
+               "description": "Select more than one option from the following:",
+               "options": [
+                   {
+                       "id": 8569745,
+                       "color": "#F95569",
+                       "order": 1,
+                       "title": "#work"
+                   },
+                   {
+                       "id": 84759883,
+                       "color": "#8F7EE6",
+                       "order": 4,
+                       "title": "#experience"
+                   },
+                   {
+                       "id": 94859020,
+                       "color": "#FFFFFF",
+                       "order": 5,
+                       "title": "#instaposts"
+                   },
+                   {
+                       "id": 94759589,
+                       "color": "#FFFFFF",
+                       "order": 3,
+                       "title": "#reelit"
+                   },
+                   {
+                       "id": 84598158,
+                       "color": "#6CDE43",
+                       "order": 6,
+                       "title": "#feelit"
+                   }
+                ],
+               "type": "Tags",
+               "todolist_id": 947599134746,
+               "extra_info": null
+           },
+           {
+               "id": 847596409,
+               "title": "% Mark",
+               "description": "Add the approx. % of tasks done in a day",
+               "options": [],
+               "type": "Percentage",
+               "todolist_id": 84748134746,
+               "extra_info": null
+           },
+           {
+               "id": 947499978,
+               "title": "Money",
+               "description": "",
+               "options": [],
+               "type": "Currency",
+               "todolist_id": 94747134746,
+               "extra_info": {
+                   "currency": "custom",
+                   "customValue": "USD"
+               }
+           },
+           {
+               "id": 948440684,
+               "title": "Drop Down Selection",
+               "description": "Select only one option from the list",
+               "options": [
+                   {
+                       "id": 947486745,
+                       "color": "#FFD501",
+                       "order": 1,
+                       "title": "option 2"
+                   },
+                   {
+                       "id": 94746020,
+                       "color": "#30BFBF",
+                       "order": 5,
+                       "title": "option 4"
+                   }
+                ],
+               "type": "Dropdown",
+               "todolist_id": 83748134746,
+               "extra_info": null
+           },
+           {
+               "id": 749474253,
+               "title": "Single line value",
+               "description": "",
+               "options": [],
+               "type": "Text",
+               "todolist_id": 84649434746,
+               "extra_info": null
+           },
+           {
+               "id": 9373846822,
+               "title": "Large Content",
+               "description": "Add paragraph to the field",
+               "options": [],
+               "type": "Textarea",
+               "todolist_id": 693630134746,
+               "extra_info": null
+           },
+           {
+               "id": 538464390,
+               "title": "Numeric field",
+               "description": "Add any numeric value in this field,",
+               "options": [],
+               "type": "Numbers",
+               "todolist_id": 593624134746,
+               "extra_info": null
+           },
+           {
+               "id": 93794097,
+               "title": "Submission date",
+               "description": "add the dates",
+               "options": [],
+               "type": "Date",
+               "todolist_id": 9254943134746,
+               "extra_info": null
+           }
+       ]
 }
 ```
 
@@ -122,6 +248,7 @@ Create todolist
 
 * `POST v3/projects/23423233/todolists` will create a new todolist from the parameters passed. 
 * The assigned array is an optional list of people IDs that you can get from the [people API](https://github.com/ProofHub/api_v3/blob/master/sections/people.md). 
+* Custom fields cannot be created via API
 
 ```json
 {
@@ -141,6 +268,7 @@ Update todolist
 ----------------
 
 * `PUT v3/projects/23423233/todolists/13964085` will update the todolist from the parameters passed.
+* Custom fields cannot be updated via API
 
 ```json
 {
