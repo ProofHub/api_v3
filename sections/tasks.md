@@ -82,7 +82,41 @@ Get all tasks
         "stage": {
             "id": 6074498296,
             "name": "New"
-        }
+        },
+       "custom_fields": [
+           {
+               "id": 98734767670,
+               "title": "Amount",
+               "description": "",
+               "type": "Currency",
+               "extra_info": {
+                   "currency": "custom",
+                   "customValue": "Bh"
+               },
+               "value": ""
+           },
+           {
+               "id": 749611238,
+               "title": "Submit",
+               "description": "",
+               "type": "Date",
+               "value": "2021-08-13"
+           },
+           {
+               "id": 94749807,
+               "title": "Percentage",
+               "description": "",
+               "type": "Percentage",
+               "value": ""
+           },
+           {
+               "id": 947581945,
+               "title": "Text field",
+               "description": "",
+               "type": "Text",
+               "value": "999"
+           }
+       ]
     }
 ]
 
@@ -145,7 +179,41 @@ Get task
     "stage": {
         "id": 6074498296,
         "name": "New"
-    }
+    },
+       "custom_fields": [
+           {
+               "id": 98734767670,
+               "title": "Amount",
+               "description": "",
+               "type": "Currency",
+               "extra_info": {
+                   "currency": "custom",
+                   "customValue": "Bh"
+               },
+               "value": ""
+           },
+           {
+               "id": 749611238,
+               "title": "Submit",
+               "description": "",
+               "type": "Date",
+               "value": "2021-08-13"
+           },
+           {
+               "id": 94749807,
+               "title": "Percentage",
+               "description": "",
+               "type": "Percentage",
+               "value": ""
+           },
+           {
+               "id": 947581945,
+               "title": "Text field",
+               "description": "",
+               "type": "Text",
+               "value": "999"
+           }
+       ]
 }
 
 ```
@@ -172,7 +240,9 @@ Create task
 }
 ```
 
-`200 OK` will be returned along with the JSON of the task ([Get task](#get-task)) if the record is added. `403 Forbidden` will be returned in case of invalid access.
+`200 OK` will be returned along with the JSON of the task ([Get task](#get-task)) if the record is added. 
+`403 Forbidden` will be returned in case of invalid access.
+In case of mismatch of allowed values in custom fieds, an error message `{"code":2033,"message":"Value of the custom field does not match its type."}` will be returned alongwith  `200 OK`
 
 **Attaching files**
 
