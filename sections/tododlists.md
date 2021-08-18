@@ -44,7 +44,27 @@ Get all todolists
         },
         "creator":{
             "id":12009183
-        }
+        },
+       "custom_fields": [    
+           {
+               "id": 749474253,
+               "title": "Single line value",
+               "description": "",
+               "options": [],
+               "type": "Text",
+               "todolist_id": 84649434746,
+               "extra_info": null
+           },
+           {
+               "id": 538464390,
+               "title": "Numeric field",
+               "description": "Add any numeric value in this field,",
+               "options": [],
+               "type": "Numbers",
+               "todolist_id": 593624134746,
+               "extra_info": null
+           }
+       ]
     },
     {
         "id":13965645,
