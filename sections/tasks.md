@@ -239,7 +239,7 @@ Create task
 	],
 	"custom_fields": {
 		"6768923873": {
-			"value": "95”  
+			"value": "95"
 		},
 		"56302309": {
 			"value": ["1986745"]
@@ -288,7 +288,7 @@ Update task
 	"due_date":"2013-12-31",
 	"custom_fields": {
 		"6768923873": {
-			"value": "95”  
+			"value": "95"  
 		},
 		"56302309": {
 			"value": ["1986745"]
