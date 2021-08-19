@@ -225,24 +225,33 @@ Create task
 
 ```json
 {
-    "title": "Get it signed",
-    "description": "Need to get it signed off immediately",
-    "start_date": "2016-11-10",
-    "due_date": "2016-11-10",
-    "estimated_hours": 5,
-    "estimated_mins": 30,
-    "assigned": [
-        12009183
-    ],
-    "labels": [
-        12254912
-    ]
+	"title": "Get it signed",
+	"description": "Need to get it signed off immediately",
+	"start_date": "2016-11-10",
+	"due_date": "2016-11-10",
+	"estimated_hours": 5,
+	"estimated_mins": 30,
+	"assigned": [
+		12009183
+	],
+	"labels": [
+		12254912
+	],
+	"custom_fields": {
+		"6768923873": {
+			"value": "95”  
+		},
+		"56302309": {
+			"value": ["1986745"]
+		}
+	}
 }
 ```
 
 `200 OK` will be returned along with the JSON of the task ([Get task](#get-task)) if the record is added. 
 `403 Forbidden` will be returned in case of invalid access.
-In case of mismatch of allowed values in custom fieds, an error message `{"code":2033,"message":"Value of the custom field does not match its type."}` will be returned alongwith  `200 OK`
+In case of mismatch of allowed values in custom fieds, an error message `{"code":2033,"message":"Value of the custom field does not match its type."}` will be returned alongwith  `200 OK`.
+For adding values in custom fields of type tag or dropdown, an array with multiple or one value is sent respectively.
 
 **Attaching files**
 
@@ -276,7 +285,15 @@ Update task
 {
 	"description":"Get it signed off",
 	"start_date":"2013-12-31",
-	"due_date":"2013-12-31"
+	"due_date":"2013-12-31",
+	"custom_fields": {
+		"6768923873": {
+			"value": "95”  
+		},
+		"56302309": {
+			"value": ["1986745"]
+		}
+	}
 }
 ```
 
