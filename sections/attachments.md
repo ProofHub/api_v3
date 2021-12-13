@@ -13,17 +13,17 @@ Uploading files to ProofHub is a two step process:
 Create attachments
 ----------------
 
-* `POST /files/upload` uploads a file. The request body should be the binary data of the attachment. Make sure to set the Content-Type header.
+* `POST https://<company-url>.proofhub.com/files/upload.php` uploads a file. The request body should be the binary data of the attachment. Make sure to set the Content-Type header.  Replace company-url in the request with your ProofHub account URL.
 
 ```File uploading via API is a two-step process.
 
 1. First, you need to get the file ID using the request URL: 
 
-POST /files/upload.php  
+POST https://<company-url>.proofhub.com/files/upload.php  
 
 In the headers, you need to pass the x-api-key and in the body (form data) you need to pass the project id and upload the file as:
 
-pid:<project id>
+project_id:<project id>
 file:<select the file>
 
 In the response of this request, you'll get the "file_id".
@@ -32,7 +32,7 @@ In the response of this request, you'll get the "file_id".
 
 The request URL would be,
 
-POST  /api/v3/projects/<project_id>/folders/<folder_id>/files"
+POST  /api/v3/projects/<project_id>/folders/<folder_id>/files
 
 Headers:
 
@@ -46,6 +46,6 @@ Content-type:Application/JSON
   "attachments": <file_id>
 }
 
-If the folder parameter is not specified, the file will be uploaded in "All files".
+If the folder parameter is not specified, the file will be uploaded in the project home folder.
 ```
 
