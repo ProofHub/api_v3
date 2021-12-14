@@ -789,14 +789,10 @@ Copy task
     "project":23423233,
     "list_id":13964085,
     "stage":123456,
-    "move_people":true,
     "copy_assignees":true,
     "copy_dates":true,
-    "proof_comment":true,
     "copy_comments":true,
-    "completed":false,
-    "copy_task":13966758,
-    "parent_id":13966757 
+    "copy_task":13966758
 }
 ```
 
