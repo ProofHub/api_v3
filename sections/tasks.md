@@ -790,6 +790,7 @@ Copy task
     "list_id":13964085,
     "stage":123456,
     "copy_assignees":true,
+    "copy_custom_fields":true,
     "copy_dates":true,
     "copy_comments":true,
     "copy_task":13966758
@@ -813,6 +814,7 @@ Move task
     "stage":123456,
     "move_people":true,
     "copy_assignees":true,
+    "copy_custom_fields":true,
     "move_dates":true,
     "proof_comment":true,
     "copy_comments":true,
