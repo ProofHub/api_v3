@@ -55,6 +55,22 @@ Get all tasks
 			"creator":{
 				"id":12009183
 			}
+			"custom_fields": [
+				{
+					"id": 2585222499,
+					"title": "Reviewed By",
+					"description": "",
+					"type": "Text",
+					"value": "Alison"
+				}
+				{
+					"id": 953429949,
+					"title": "Review Date",
+					"description": "",
+					"type": "Date",
+					"value": "2022-05-07"
+				}
+			]
 		},
 		{
 			"ticket": "1533",
