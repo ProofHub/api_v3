@@ -94,15 +94,23 @@ Create time
 
 ```json
 {
+    "project": 5211423221,
+    "timesheet_id": 7537277243,
     "date":"2016-10-05",
     "logged_hours":"1",
     "logged_mins":"40",
     "status":"billable",
-    "description":"Brainstorm session with potential users"
+    "description":"Brainstorm session with potential users",
+    "list_id": 261755063515,
+    "task_id": 270733481758
 }
 ```
 
 `200 OK` will be returned along with the JSON of the time entry if the record is added. `403 Forbidden` will be returned in case of invalid access.
+* Project id and timesheet id are mandatory parameters. 
+* One of the two parameters: logged_hours or logged_mins must be sent. 
+* List id and task id should both be sent to link the time entry to a task
+
 
 Update time
 ----------------
