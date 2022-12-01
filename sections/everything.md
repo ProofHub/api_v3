@@ -2,6 +2,7 @@ Everything
 ===========
 
 * [Get all tasks](#get-all-tasks)
+* [Get all time](#get-all-time)
 
 Get all tasks
 ----------------
@@ -128,4 +129,102 @@ Get all tasks
 **Example with all optional parameters**
 
 `GET v3/alltodo?projects=23423233,23423234&labels=12254912,12254913&include_subtasks=true&asssigned=12009813,11679192&include_unassigned=true&completed=false&start=0&limit=100`
+
+Get all time
+----------------
+
+* `GET v3/alltime?start=0&limit=100` will return all time entries for the account as per the starting position and limit sent in the request.
+
+```json
+{
+[
+    {
+        "by_me": true,
+        "id": 123456789
+        "status": "none",
+        "description": null,
+        "date": "2020-06-02",
+        "created_at": "2020-06-02T11:23:34+00:00",
+        "logged_hours": 12,
+        "logged_mins": null,
+        "timer": false,
+        "sort": 0,
+        "timesheet": {
+            "id": 51654376543,
+            "title": "timesheet for client billing",
+            "assigned": [],
+            "private": false,
+            "logged_hours": 62,
+            "logged_mins": null,
+            "archived": false,
+            "estimated_hours": null,
+            "estimated_mins": null,
+            "timesheet_logged_hours": null,
+            "timesheet_logged_mins": null,
+            "creator": 15654365
+        },
+        "task": null,
+        "project": 36765436543,
+        "project_name": "Customer Acme",
+        "creator": 1565432654
+    },
+    {
+        "by_me": true,
+        "id": 12987658765,
+        "status": "billed",
+        "description": "time entry for work done",
+        "date": "2021-02-24",
+        "created_at": "2021-02-24T07:14:38+00:00",
+        "logged_hours": 50,
+        "logged_mins": null,
+        "timer": false,
+        "sort": 0,
+        "timesheet": {
+            "id": 518768765,
+            "title": "timesheet for client billing",
+            "assigned": [],
+            "private": false,
+            "logged_hours": 62,
+            "logged_mins": null,
+            "archived": false,
+            "estimated_hours": null,
+            "estimated_mins": null,
+            "timesheet_logged_hours": null,
+            "timesheet_logged_mins": null,
+            "creator": 15876547654
+        },
+        "task": {
+            "list_id": 127657654,
+            "list_name": "Acme website worklist",
+            "task_id": 12765476543,
+            "task_name": "website wireframe design",
+            "subtask_id": null,
+            "subtask_name": null,
+            "stage": 3576547654,
+            "ticket": "81654"
+        },
+        "project": 3676547654,
+        "project_name": "Customer Acme",
+        "creator": 157654765
+    }
+]
+}
+
+```
+
+**Optional Parameters**
+
+`group_by=date`  to get time entries grouped by date. Other values for this parameter can be `person_name`, `project` or `timesheet`.
+
+`order_by=asc`  to get time entries in ascending order. Other value for this parameter can be `desc`.
+
+`user_id=1598765476`  to get time entries only for a specific user.
+
+`status=billable`  to get time entries of any status. Other values for this parameter can be `billed`, `non-billable`, `void` or `none`.
+
+`from_date=2019-08-01`  to get time entries after specific date. Specified date is included. Supported format is `YYYY-MM-DD`.
+
+`to_date=2019-08-14`  to get time entries before specific date. Specified date is included. Supported format is `YYYY-MM-DD`.
+
+`project_id=36676546`  to get time entries for specific project. Multiple projects can be included by sending comma separated project ids.
 
