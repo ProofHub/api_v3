@@ -44,7 +44,6 @@ API endpoints
 * [Folders](https://github.com/ProofHub/api_v3/blob/master/sections/folders.md)
 * [Timesheets](https://github.com/ProofHub/api_v3/blob/master/sections/timesheets.md)
 * [Time](https://github.com/ProofHub/api_v3/blob/master/sections/time.md)
-* [Quickies](https://github.com/ProofHub/api_v3/blob/master/sections/quickies.md)
 * [Request forms](https://github.com/ProofHub/api_v3/blob/master/sections/requestforms.md)
 * [Announcements](https://github.com/ProofHub/api_v3/blob/master/sections/announcements.md)
 * [Everything](https://github.com/ProofHub/api_v3/blob/master/sections/everything.md)
