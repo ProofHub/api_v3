@@ -10,7 +10,7 @@ Discussion Comments
 Get comments
 ----------------
 
-* `GET v3/projects/23423233/topics/25299755/comments` will return comments for the specified topic. 
+* `GET v3/projects/23423233/topics/25299755/comments?start=0&limit=100` will return comments for the specified topic as per the starting position and limit sent in the request. 
 
 ```json
 [
